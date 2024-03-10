@@ -1,0 +1,131 @@
+/*********************************************** 
+ * Overall body. My favourite background color * 
+ ***********************************************/
+body {
+	background: #137A7A;
+	font-family: "Comic Sans MS";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+/**********************
+ * My own header      *
+ **********************/
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #137A7A;
+  color: #ffeeff;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 1px 5px 25px 5px; /* top right bottom left */
+}
+
+/**********************
+ * My navigation bar  *
+ **********************/
+.navbar {
+  /* background: #137A7A; */
+  background: #333333;
+  text-align: center;
+  margin: 2px auto 0px auto; /* top right bottom left */
+  padding: 10px 10px 10px 10px;/* top right bottom left */
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: center;
+  display: inline; /* block */
+  color: #ffeeff;
+  font-size: 14px;
+  padding: 2px 40px 2px 40px; /* top right bottom left */
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/***************************************************
+ * Container for my column (mybody + rightsidebar) *
+ ***************************************************/
+.row {  
+  display: -ms-flexbox; /* for IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* for IE10 */
+  flex-wrap: wrap;
+  
+  background: #ffffff;
+  color: black;
+  margin: 1px auto 0;
+  max-width: 900px;
+  min-height: 800px;
+  overflow: hidden;
+  margin: 0px auto 20px auto; /* top right bottom left */
+  padding: 30px 10px 10px 10px;/* top right bottom left */
+}
+
+/************************************************************
+ * Though we are the soul, but still let's talk about body  *
+ ************************************************************/
+.mybody {
+  -ms-flex: 70%; /* for IE10 */
+  flex: 70%;
+}
+
+.mybody h1 {
+	color: #11117a;
+	padding: 1px 30px 1px 30px;/* top right bottom left */
+}
+
+.mybody p{
+	font-size: 18px;
+	padding: 1px 30px 1px 30px;/* top right bottom left */
+}
+
+.mybody ul{
+	font-size: 18px;
+	padding: 1px 30px 1px 90px; /* top right bottom left */
+}
+
+
+/**********************************************************
+ * A picture is worth 1000 words. Should not one be here. *
+ **********************************************************/
+.rightsidebar {
+  -ms-flex: 30%; /* for IE10 */
+  flex: 30%;
+}
+
+.figure {
+	border-radius: 20px;
+	border: 2px solid #000000;
+	height: 750px;
+	width: 240px;
+}
+
+/********************
+ * Footer is needed *
+ ********************/
+.footer {
+  background: #137A7A;
+  color: #eeeeee;
+  text-align: center;
+  margin: 0px auto 0px auto; /* top right bottom left */
+  padding: 1px 1px 50px 1px;/* top right bottom left */
+  max-width: 900px;
+  overflow: hidden;
+}
