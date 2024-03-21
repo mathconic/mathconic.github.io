@@ -19,6 +19,13 @@ body {
   color: #ffeeff;
 }
 
+.topfigure {
+	/*border-radius: 10px;
+	border: 2px solid #666666; */
+	height: 100px;
+	width: 500px;
+}
+
 .header h1 {
   font-size: 50px;
   font-weight: normal;
@@ -28,7 +35,7 @@ body {
 .header p {
   font-size: 18px;
   text-transform: uppercase;
-  padding: 1px 5px 25px 5px; /* top right bottom left */
+  padding: 0px 5px 5px 5px; /* top right bottom left */
 }
 
 /**********************
