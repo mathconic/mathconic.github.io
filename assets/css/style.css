@@ -1,0 +1,123 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdf4;
+      color: #222;
+      line-height: 1.6;
+      padding: 0 5vw;
+}
+
+header {
+      text-align: center;
+      padding: 60px 0 30px;
+}
+
+header img {
+      max-width: 160px;
+      height: auto;
+      margin-bottom: 20px;
+}
+
+header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+}
+
+header p {
+      font-size: 1.1rem;
+      color: #444;
+}
+
+section {
+      max-width: 700px;
+      margin: 40px auto;
+}
+
+section h2 {
+      font-size: 1.5rem;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+}
+
+section p {
+      margin-bottom: 15px;
+      font-size: 1rem;
+      color: #333;
+}
+
+.contact-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 1rem;
+      text-align: center;
+}
+
+.contact-box p {
+      margin: 8px 0;
+}
+
+.contact-box a {
+      color: #007BFF;
+      text-decoration: none;
+}
+
+.contact-box a:hover {
+      text-decoration: underline;
+}
+
+.whatsapp-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+}
+
+.whatsapp-button:hover {
+      background-color: #1ebe5b;
+}
+
+footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin: 50px 0 20px;
+}
+
+.logo {
+    display: block;
+    max-width: 900px;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p,
+      section p {
+        font-size: 0.95rem;
+      }
+
+      .whatsapp-button {
+        font-size: 0.95rem;
+        padding: 10px 16px;
+      }
+
+      section h2 {
+        font-size: 1.3rem;
+      }
+}
