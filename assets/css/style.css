@@ -9,7 +9,7 @@ body {
 
 header {
       text-align: center;
-      padding: 60px 0 30px;
+      padding: 60px 0 2px;
 }
 
 header img {
@@ -20,7 +20,7 @@ header img {
 
 header h1 {
       font-size: 2.4rem;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       color: #1a1a1a;
 }
 
@@ -32,10 +32,19 @@ header p {
 section {
       max-width: 700px;
       margin: 40px auto;
+      scroll-margin-top: 20px;
 }
 
 section h2 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      border-bottom: 3px solid #eee;
+      padding-bottom: 5px;
+}
+
+section h3 {
+      font-size: 1.2rem;
       color: #1a1a1a;
       margin-bottom: 12px;
       border-bottom: 1px solid #eee;
@@ -44,8 +53,39 @@ section h2 {
 
 section p {
       margin-bottom: 15px;
-      font-size: 1rem;
+      font-size: 1.08rem;
       color: #333;
+}
+
+.feature-list {
+    margin-top: 2px;
+    font-size: 1.08rem;
+}
+
+.article-list {
+    /* list-style: none; */
+    padding-left: 30px;
+}
+
+.article-list li {
+    margin-bottom: 18px;
+}
+
+.article-list a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    /*color: #1E5A48;*/
+}
+
+.article-list a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    margin-top: 6px;
+    color: #444;
+    font-size: 0.85rem;
+    line-height: 1.2;
 }
 
 .contact-box {
@@ -99,10 +139,11 @@ footer {
     width: 90%;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
       header h1 {
         font-size: 1.8rem;
       }

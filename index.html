@@ -3,58 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MathConic | Premium Mathematics Mentoring</title>
+  <title>MathConic | One-to-One Mathematics Coaching for Classes 9–12</title>
   <meta name="description" content="Personalized one-to-one mathematics mentoring for Classes 9 and 10. Build strong concepts, logical thinking, and confidence in mathematics.">
   <meta name="author" content="MathConic">
   <meta name="theme-color" content="#fdfdf4">
   <link rel="icon" href="assets/images/mathconic-favicon.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
   <style>
     
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="home">
     <!--<img src="assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" style="max-width: 768px; margin-bottom: 0px;"/>-->
     <img src="assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" class="logo"/>
+
     <h1>Math is best learned one mind at a time.</h1>
-    <p>Secondary | Sr. Secondary | Excellence. Only.</p>
+    <p>Personalized Coaching for Classes 9–12 and Undergraduate Students.</p>
   </header>
 
-  <section>
-    <h2>Why Students Learn Differently Here</h2>
+  
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Open navigation">
+        ☰
+    </button>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <section id="philosophy">
+    <h2>Teaching Philosophy </h2>
     <ul class="feature-list">
-        <li>One student. One mentor. One personalized learning journey.</li>
+        <li>One student. One mentor. One guided learning journey.</li>
         <li>Deep conceptual understanding before shortcuts and memorization.</li>
         <li>Mathematics taught through logical reasoning and clear explanations.</li>
         <li>Learning paced according to the student's needs, not the calendar.</li>
-        <li>A strong foundation for board examinations and future mathematical studies.</li>
+        <li>A solid foundation for board examinations, JEE, CUET and future mathematical studies.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="about">
     <h2>About the Tutor</h2>
     <p>I, Vikas Kumar, hold a double-postgraduate degree, including one in Mathematics, and I am an alumnus of the University of Delhi.
-      My teaching focuses on helping students understand the why behind every concept before learning the how. 
-      Mathematics is not merely a collection of formulas and procedures—it is a way of thinking.
-      My approach to teaching is built on the belief that every student can develop confidence in mathematics when concepts are presented with clarity, patience, and logical progression.
+      My teaching focuses on helping students understand the why behind every concept before learning the how.
+      My approach is built on the belief that every student can develop confidence in mathematics when concepts are presented with clarity, patience, and logical progression.
     </p>
       
     <p>Each lesson is conducted in a one-to-one setting, allowing the pace, depth, and teaching style to be tailored to the individual student's needs. 
       The objective is not only to achieve excellent academic results but also to build a strong mathematical foundation that serves students well in higher studies and beyond. 
-      I believe that genuine understanding creates confidence, and confidence leads to lasting success.
+      <!--I believe that genuine understanding creates confidence, and confidence leads to lasting success.-->
     </p>
   </section>
 
-  <section>
+  <section id="articles">
+    <h2>Articles and Videos</h2>
+    <ul class="article-list">
+      <li>
+        <a href="articles/EuclidElements.html">Euclid's Elements: Where Geometry Begins</a>
+        <div class="subtitle">
+          A deeper exploration of Euclid's Elements, its logical structure, proofs, and enduring influence on mathematics.
+        </div>
+      </li>
+      <li>
+        <a href="articles/RealAnalysis.html">Real Analysis: Essential Terminology and Theorems</a>
+        <div class="subtitle">
+            A comprehensive reference guide covering the core theorems, terminology, and foundational results of introductory Real Analysis for first-year Indian undergraduate mathematics students.
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+  <section id="contact">
     <h2>How to Enroll</h2>
     <p>This is not a mass-enrollment program. As a <strong>premium coaching experience</strong>, that prioritizes quality over affordability, admission begins with a <strong>free counseling session</strong> — involving both the student and parent(s).</p>
     <p>We discuss academic goals, expectations, and readiness. If it’s a mutual fit, we proceed to scheduling sessions.</p>
   </section>
 
   <section>
-    <h2>Contact / Get Started</h2>
+    <h2>Contact/Get Started</h2>
     <div class="contact-box">
       <p><strong>📞 Phone:</strong> <a href="tel:+918527008007">+91-8527008007</a></p>
       <p><strong>📧 Email:</strong> <a href="mailto:mathconic@gmail.com">mathconic@gmail.com</a></p>
@@ -73,6 +108,7 @@
     &copy; 2025 mathconic.com. All rights reserved.
   </footer>
 
+  <script src="assets/js/navbar.js"></script>
 </body>
 </html>
 

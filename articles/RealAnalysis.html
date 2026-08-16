@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<!-- Article Template Part 1 - Start -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathConic | One-to-One Mathematics Coaching for Classes 9–12</title>
+  <meta name="description" content="Personalized one-to-one mathematics mentoring for Classes 9 and 10. Build strong concepts, logical thinking, and confidence in mathematics.">
+  <meta name="author" content="MathConic">
+  <meta name="theme-color" content="#fdfdf4">
+  <link rel="icon" href="./../assets/images/mathconic-favicon.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="./../assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/navbar.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <!--<img src="assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" style="max-width: 768px; margin-bottom: 0px;"/>-->
+    <img src="./../assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" class="logo"/>
+
+    <h1>Math is best learned one mind at a time.</h1>
+    <p>Personalized Mathematics Coaching for Classes 9–12.</p>
+  </header>
+
+  
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Open navigation">
+        ☰
+    </button>
+    <ul class="nav-menu">
+      <li><a href="./../index.html#home">Home</a></li>
+      <li><a href="./../index.html#philosophy">Philosophy</a></li>
+      <li><a href="./../index.html#about">About</a></li>
+      <li><a href="./../index.html#articles">Articles</a></li>
+      <li><a href="./../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+<!-- Article Template Part 1 - End -->
+
+<!-- Article Start -->
+  <section>
+    <h2>Real Analysis: Essential Terminology and Theorems</h2>
+    <p>Designed as an essential companion for first-year B.Sc. and B.A. Mathematics students across Indian universities,
+        this article provides a structured and clear walkthrough of introductory Real Analysis.
+        It covers fundamental concepts—including the completeness property of real numbers, sequences, series,
+        limits, continuity, and differentiability—alongside rigorous definitions, core terminology, and pivotal theorems
+        like Bolzano-Weierstrass, Heine-Borel, and the Mean Value Theorems. The article is a quick-reference guide
+        for exam preparation, foundational revision, and mastering undergraduate real-variable mathematics.</p>
+  </section>
+
+  <section class="article-content" aria-label="Real Analysis formulas and results">
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]'], ['$$', '$$']],
+          packages: { '[+]': ['ams'] }
+        },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+
+    <style>
+      .article-content {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 18px 24px 55px;
+        font-family: "Times New Roman", Georgia, serif;
+        font-size: 18px;
+        line-height: 1.65;
+        color: #222;
+      }
+      .article-content h1 {
+        background: #111;
+        color: #fff;
+        padding: 10px 15px;
+        margin: 35px 0 24px;
+        font-size: 1.12em;
+        line-height: 1.25;
+      }
+      .article-content h2 {
+        margin: 25px 0 8px;
+        font-size: 0.95em;
+        color: #222;
+      }
+      .article-content p { margin: 9px 0; }
+      .article-content mjx-container[display="true"] {
+        margin: 1.05em 0 !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .article-content table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .article-content th, .article-content td {
+        padding: 6px 9px;
+        border-bottom: 1px solid #ccc;
+      }
+      @media (max-width: 700px) {
+        .article-content {
+          padding: 24px 16px 40px;
+          font-size: 16px;
+        }
+        .article-content h1 { font-size: 1.3em; }
+        .article-content mjx-container[display="true"] {
+          font-size: 95% !important;
+        }
+      }
+      @media print {
+        .article-content { max-width: none; font-size: 12pt; }
+        .article-content h1 {
+          color: #000;
+          background: none;
+          border-bottom: 2px solid #000;
+        }
+      }
+    </style>
+
+<h1 id="real-number-system">Real Number System</h1>
+
+
+<h2 class="unnumbered" id="ordered-field-properties">1.1 Ordered field
+properties</h2>
+
+
+<p>The real numbers form a field with a compatible total order.
+Addition, multiplication, additive/multiplicative inverses and order
+laws hold.</p>
+
+
+<h2 class="unnumbered" id="absolute-value">1.2 Absolute value</h2>
+
+
+<p>Absolute value gives distance from zero.</p>
+
+
+<p><span class="math display">\[|x| = \begin{cases}
+x,  &amp; x \ge 0 \\
+-x,  &amp; x &lt; 0
+\end{cases}\]</span></p>
+
+
+<h2 class="unnumbered" id="distance">1.3 Distance</h2>
+
+
+<p>The distance between x and y is the absolute difference. <span class="math display">\[d(x,y)=|x-y|\]</span></p>
+
+
+<h2 class="unnumbered" id="basic-absolute-value-equivalence">1.4 Basic
+absolute-value equivalence</h2>
+
+
+<p>An absolute-value bound is equivalent to a two-sided inequality.
+<span class="math display">\[|x|&lt;\varepsilon \Longleftrightarrow
+-\varepsilon&lt;x&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="triangle-inequality">1.5 Triangle
+inequality</h2>
+
+
+<p>The absolute value of a sum is at most the sum of the absolute
+values. <span class="math display">\[|x+y|\le|x|+|y|\]</span></p>
+
+
+<h2 class="unnumbered" id="reverse-triangle-inequality">1.6 Reverse
+triangle inequality</h2>
+
+
+<p>The difference of absolute values is bounded by the absolute
+difference. <span class="math display">\[||x|-|y||\le|x-y|\]</span></p>
+
+
+<h2 class="unnumbered" id="intervals">1.7 Intervals</h2>
+
+
+<p>Intervals are the basic connected subsets of <span class="math inline">\(\mathbb{R}\)</span>. <span class="math display">\[(a,b), [a,b], (a,b], [a,b)\]</span></p>
+
+
+<h2 class="unnumbered" id="upper-bound">1.8 Upper bound</h2>
+
+
+<p>u is an upper bound of S if every element of S is at most u. <span class="math display">\[x\le{}u \: \forall{} x\in{}S\]</span></p>
+
+
+<h2 class="unnumbered" id="lower-bound">1.9 Lower bound</h2>
+
+
+<p>l is a lower bound of S if every element of S is at least l. <span class="math display">\[l\le{}x \: \forall{} x\in{}S\]</span></p>
+
+
+<h2 class="unnumbered" id="maximum-and-minimum">1.10 Maximum and minimum</h2>
+
+
+<p>A maximum/minimum is an element of the set that is respectively <span class="math inline">\(\ge\)</span>/<span class="math inline">\(\le\)</span> every other element. <span class="math display">\[M=max \: S \Longleftrightarrow M\in{}S \text{ and
+} x\le{}M \: \forall{}x\in{}S\]</span></p>
+
+
+<h2 class="unnumbered" id="supremum">1.11 Supremum</h2>
+
+
+<p>sup S is the least upper bound. <span class="math display">\[s=sup \:
+S\]</span></p>
+
+
+<h2 class="unnumbered" id="infimum">1.12 Infimum</h2>
+
+
+<p>inf S is the greatest lower bound. <span class="math display">\[m=inf
+\: S\]</span></p>
+
+
+<h2 class="unnumbered" id="least-upper-bound-property">1.13
+Least-upper-bound property (The Completeness Axiom)</h2>
+
+
+<p>Every nonempty subset of <span class="math inline">\(\mathbb{R}\)</span> bounded above has a supremum
+in <span class="math inline">\(\mathbb{R}\)</span>. <span class="math display">\[S\ne\varnothing \text{ and } S \text{ bounded
+above }\Longrightarrow sup \:S\in\mathbb{R}\]</span></p>
+
+
+<h2 class="unnumbered" id="greatest-lower-bound-property">1.14
+Greatest-lower-bound property</h2>
+
+
+<p>Every nonempty subset of <span class="math inline">\(\mathbb{R}\)</span> bounded below has an infimum
+in <span class="math inline">\(\mathbb{R}\)</span>. <span class="math display">\[S\ne\varnothing \text{ and } S \text{ bounded
+below } \Longrightarrow inf \: S\in\mathbb{R}\]</span></p>
+
+
+<h2 class="unnumbered" id="archimedean-property">1.15 Archimedean
+property</h2>
+
+
+<p>The natural numbers are unbounded above. <span class="math display">\[\forall{}x\in\mathbb{R}, \:
+\exists{}\:n\in\mathbb{N}: n&gt;x\]</span></p>
+
+
+<h2 class="unnumbered" id="archimedean-reciprocal-form">1.16 Archimedean
+reciprocal form</h2>
+
+
+<p>There are arbitrarily small positive reciprocals of natural numbers.
+<span class="math display">\[\forall\varepsilon&gt;0, \: \exists{}\:
+n\in\mathbb{N}: 1/n&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="density-of-rationals">1.17 Density of
+rationals</h2>
+
+
+<p>Between any two distinct real numbers lies a rational number. <span class="math display">\[a&lt;b \Longrightarrow \exists{}\:q\in\mathbb{Q}:
+a&lt;q&lt;b\]</span></p>
+
+
+<h2 class="unnumbered" id="density-of-irrationals">1.18 Density of
+irrationals</h2>
+
+
+<p>Between any two distinct real numbers lies an irrational number.
+<span class="math display">\[a&lt;b \Longrightarrow \exists{}\:x\in
+\mathbb{R} \setminus \mathbb{Q}: a&lt;x&lt;b\]</span></p>
+
+
+<h2 class="unnumbered" id="nested-interval-principle">1.19 Nested
+interval principle</h2>
+
+
+<p>A nested sequence of non-empty closed bounded intervals has non-empty
+intersection. <span class="math display">\[I_{1}\supseteq{}I_{2}\supseteq\cdots
+\Longrightarrow \bigcap{}I_{n}\ne\varnothing\]</span></p>
+
+
+<h2 class="unnumbered" id="finite-intersection-principle-for-compact-intervals">1.20 Finite
+intersection principle for compact intervals</h2>
+
+
+<p>A family of closed intervals with the finite-intersection property
+has nonempty total intersection. <span class="math display">\[\text{
+Every finite intersection }\ne\varnothing \Longrightarrow
+\bigcap{}I\alpha\ne\varnothing\]</span></p>
+
+
+<h2 class="unnumbered" id="countability-of-mathbbq">1.21 Countability of
+<span class="math inline">\(\mathbb{Q}\)</span></h2>
+
+
+<p>The rational numbers are countable. <span class="math display">\[|\mathbb{Q}|=|\mathbb{N}|\]</span></p>
+
+
+<h2 class="unnumbered" id="uncountability-of-mathbbr">1.22
+Uncountability of <span class="math inline">\(\mathbb{R}\)</span></h2>
+
+
+<p>The real numbers are not countable. <span class="math display">\[|\mathbb{R}|&gt;|\mathbb{N}|\]</span></p>
+
+
+<h1 id="sequences">Sequences</h1>
+
+
+<h2 class="unnumbered" id="sequence">2.1 Sequence</h2>
+
+
+<p>A sequence is a function from <span class="math inline">\(\mathbb{N}\)</span> to <span class="math inline">\(\mathbb{R}\)</span> (or another set). <span class="math display">\[(a_n)_{n=1}^\infty\]</span></p>
+
+
+<h2 class="unnumbered" id="convergence">2.2 Convergence</h2>
+
+
+<p>A sequence converges to L if its terms eventually lie within every
+<span class="math inline">\(\varepsilon\)</span>-neighborhood of L.
+<span class="math display">\[a_{n}\to{}L \Longleftrightarrow
+\forall\varepsilon&gt;0 \: \exists{}N: n\ge{}N \Longrightarrow
+|a_{n}-L|&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="uniqueness-of-limit">2.3 Uniqueness of
+limit</h2>
+
+
+<p>A convergent sequence has exactly one limit. <span class="math display">\[a_{n}\to{}L_{1} \text{ and } a_{n}\to{}L_{2}
+\Longrightarrow L_{1}=L_{2}\]</span></p>
+
+
+<h2 class="unnumbered" id="eventually-bounded">2.4 Eventually
+bounded</h2>
+
+
+<p>Every convergent sequence is eventually bounded, and hence bounded.
+<span class="math display">\[a_{n}\to{}L \Longrightarrow
+\exists{}\:\:M,N: n\ge{}N \Longrightarrow |a_{n}|\le{}M\]</span></p>
+
+
+<h2 class="unnumbered" id="limit-laws">2.5 Limit laws</h2>
+
+
+<p>Limits preserve sums, scalar multiples, products and quotients when
+the quotient denominator limit is nonzero. <span class="math display">\[lim(a_{n}\pm{}b_{n})=a\pm{}b; \:\:
+lim(ca_{n})=cL; \:\:lim(a_{n}b_{n})=ab\]</span></p>
+
+
+<h2 class="unnumbered" id="squeeze-theorem">2.6 Squeeze theorem</h2>
+
+
+<p>A sequence between two sequences with the same limit has that limit.
+<span class="math display">\[a_{n}\le{}b_{n}\le{}c_{n},
+a_{n},c_{n}\to{}L \Longrightarrow b_{n}\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="absolute-value-criterion">2.7 Absolute-value
+criterion</h2>
+
+
+<p>Convergence can be tested using absolute distance from the proposed
+limit. <span class="math display">\[a_{n}\to{}L \Longleftrightarrow
+|a_{n}-L|\to0\]</span></p>
+
+
+<h2 class="unnumbered" id="subsequence">2.8 Subsequence</h2>
+
+
+<p>A subsequence is obtained by selecting terms with strictly increasing
+indices. <span class="math display">\[a_{n_k},
+n_{1}&lt;n_{2}&lt;\cdots\]</span></p>
+
+
+<h2 class="unnumbered" id="subsequence-theorem">2.9 Subsequence
+theorem</h2>
+
+
+<p>Every subsequence of a convergent sequence converges to the same
+limit. <span class="math display">\[a_{n}\to{}L \Longrightarrow
+a_{n_k}\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="divergence-to-infinity">2.10 Divergence to
+infinity</h2>
+
+
+<p>A sequence tends to +<span class="math inline">\(\infty\)</span> when
+it eventually exceeds every real bound. <span class="math display">\[a_{n}\to\infty \Longleftrightarrow
+\forall{}M\in\mathbb{R} \:\: \exists{}N: n\ge{}N \Longrightarrow
+a_{n}&gt;M\]</span></p>
+
+
+<h2 class="unnumbered" id="monotone-sequence">2.11 Monotone
+sequence</h2>
+
+
+<p>Increasing/decreasing means successive terms are ordered
+consistently. <span class="math display">\[a_{n+1}\ge{}a_{n} \text{ or }
+a_{n+1}\le{}a_{n}\]</span></p>
+
+
+<h2 class="unnumbered" id="monotone-convergence-theorem">2.12 Monotone
+convergence theorem</h2>
+
+
+<p>A monotone bounded sequence converges. <span class="math display">\[a_{n}\uparrow \text{ and bounded above
+}\Longrightarrow a_{n} \text{ converges.}\]</span></p>
+
+
+<h2 class="unnumbered" id="bolzano-weierstrass-theorem">2.13
+Bolzano-Weierstrass theorem</h2>
+
+
+<p>Every bounded sequence in <span class="math inline">\(\mathbb{R}\)</span> has a convergent subsequence.
+<span class="math display">\[(a_{n}) \text{ bounded } \Longrightarrow
+\exists{} \:\:a_{n_k}\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchy-sequence">2.14 Cauchy sequence</h2>
+
+
+<p>Terms eventually become arbitrarily close to each other. <span class="math display">\[\forall\varepsilon&gt;0 \:\exists\:{}N: m,n\ge{}N
+\Longrightarrow |a_m-a_{n}|&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchy-criterion-for-mathbbr">2.15 Cauchy
+criterion for <span class="math inline">\(\mathbb{R}\)</span></h2>
+
+
+<p>A real sequence converges iff it is Cauchy. <span class="math display">\[a_{n} \text{ converges } \Longleftrightarrow
+(a_{n}) \text{ is Cauchy.}\]</span></p>
+
+
+<h2 class="unnumbered" id="limsup">2.16 limsup</h2>
+
+
+<p>The limit superior is the limiting upper envelope of the sequence.
+<span class="math display">\[\limsup_{n \to \infty} a_n = \lim_{n \to
+\infty} \left( \sup_{k \ge n} a_k \right)\]</span></p>
+
+
+<h2 class="unnumbered" id="liminf">2.17 liminf</h2>
+
+
+<p>The limit inferior is the limiting lower envelope. <span class="math display">\[\liminf_{n \to \infty} a_n = \lim_{n \to \infty}
+\left( \inf_{k \ge n} a_k \right)\]</span></p>
+
+
+<h2 class="unnumbered" id="convergence-via-limsup-and-liminf">2.18
+Convergence via limsup and liminf</h2>
+
+
+<p>A bounded sequence converges exactly when its limsup and liminf
+agree. <span class="math display">\[a_{n} \to L \iff \limsup_{n \to
+\infty} a_{n} = \liminf_{n \to \infty} a_{n} = L\]</span></p>
+
+
+<h2 class="unnumbered" id="cluster-point-of-a-sequence">2.19 Cluster
+point of a sequence</h2>
+
+
+<p>L is a cluster point if some subsequence converges to L. <span class="math display">\[\exists{}\:n_{k}: a_{n_k}\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="every-bounded-sequence-has-a-cluster-point">2.20 Every bounded
+sequence has a cluster point</h2>
+
+
+<p>This is the Bolzano-Weierstrass consequence in <span class="math inline">\(\mathbb{R}\)</span>. <span class="math display">\[(a_{n}) \text{ bounded } \Longrightarrow \text{It
+has a cluster point.}\]</span></p>
+
+
+<h1 id="infinite-series">Infinite Series</h1>
+
+
+<h2 class="unnumbered" id="series-and-partial-sums">3.1 Series and
+partial sums</h2>
+
+
+<p>A series converges when its sequence of partial sums converges. <span class="math display">\[\sum_{n} \text{ converges } \Longleftrightarrow
+S_{n}=\sum_{k=1}^na_{k} \text{ converges.}\]</span></p>
+
+
+<h2 class="unnumbered" id="necessary-condition">3.2 Necessary
+condition</h2>
+
+
+<p>The terms of a convergent series must tend to zero. <span class="math display">\[\sum_{n} \text{ converges } \Longrightarrow
+a_{n}\to0\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchy-criterion-for-series">3.3 Cauchy
+criterion for series</h2>
+
+
+<p>A series converges iff its tails can be made arbitrarily small. <span class="math display">\[\forall \: \varepsilon&gt;0, \:\:\exists{} \:N:
+m&gt;n\ge{}N \Longrightarrow
+\left|\sum_{k=n+1}^ma_{k}\right|&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="geometric-series">3.4 Geometric series</h2>
+
+
+<p>The geometric series converges exactly when |r|&lt;1. <span class="math display">\[\sum_{n=0}^{\infty} a r^{n} = \frac{a}{1-r},
+\quad |r| &lt; 1\]</span></p>
+
+
+<h2 class="unnumbered" id="harmonic-series">3.5 Harmonic series</h2>
+
+
+<p>The harmonic series diverges. <span class="math display">\[\sum_{n=1}^\infty\frac{1}{n}=\infty\]</span></p>
+
+
+<h2 class="unnumbered" id="p-series">3.6 p-series</h2>
+
+
+<p>The p-series converges exactly for p&gt;1. <span class="math display">\[\sum_{n=1}^\infty \frac{1}{n^p} \text{ converges}
+\Longleftrightarrow p&gt;1\]</span></p>
+
+
+<h2 class="unnumbered" id="comparison-test">3.7 Comparison test</h2>
+
+
+<p>A nonnegative series dominated term-by-term by a convergent series
+converges. <span class="math display">\[0\le{}a_{n}\le{}b_{n}, \sum
+b_{n}&lt;\infty \Longrightarrow \sum a_{n}&lt;\infty\]</span></p>
+
+
+<h2 class="unnumbered" id="comparison-divergence-form">3.8 Comparison
+divergence form</h2>
+
+
+<p>A series dominating a divergent nonnegative series also diverges.
+<span class="math display">\[0\le{}b_{n}\le{}a_{n}, \sum b_{n} \text{
+diverges} \Longrightarrow \sum a_{n} \text{ diverges.}\]</span></p>
+
+
+<h2 class="unnumbered" id="limit-comparison-test">3.9 Limit comparison
+test</h2>
+
+
+<p>Positive series with a finite positive term ratio limit have the same
+convergence behavior. <span class="math display">\[\lim_{n \to
+\infty}\frac{a_{n}}{b_{n}}=L, 0&lt;L&lt;\infty\]</span></p>
+
+
+<h2 class="unnumbered" id="ratio-test">3.10 Ratio test</h2>
+
+
+<p>Ratio limit less than one gives absolute convergence; greater than
+one gives divergence. If L=1, the test is inconclusive. <span class="math display">\[L=\lim_{n \to
+\infty}\left|\frac{a_{n+1}}{a_{n}}\right|; \: \:L&lt;1 \Longrightarrow
+\text{absolute convergence.}; \: L&gt;1 \Longrightarrow
+\text{div}.\]</span></p>
+
+
+<h2 class="unnumbered" id="root-test">3.11 Root test</h2>
+
+
+<p>Root limsup less than one gives absolute convergence; greater than
+one gives divergence. <span class="math display">\[L=\limsup_{n\to\infty}\sqrt[n]{|a_n|};\quad
+L&lt;1\Longrightarrow\text{absolute convergence};\quad
+L&gt;1\Longrightarrow\text{divergence}.\]</span></p>
+
+
+<h2 class="unnumbered" id="integral-test">3.12 Integral test</h2>
+
+
+<p>For positive decreasing f, the series and corresponding improper
+integral have the same convergence behavior. <span class="math display">\[\sum_{n=1}^\infty f(n) \text{ converges }
+\Longleftrightarrow \int_{1}^\infty f(x)dx \text{ converges
+}.\]</span></p>
+
+
+<h2 class="unnumbered" id="alternating-series-test">3.13
+Alternating-series test</h2>
+
+
+<p>A decreasing positive sequence tending to zero yields a convergent
+alternating series. <span class="math display">\[a_{n}\downarrow0
+\Longrightarrow \sum_{n=1}^\infty(-1)^{n}a_{n} \text{
+converges.}\]</span></p>
+
+
+<h2 class="unnumbered" id="alternating-series-remainder">3.14
+Alternating-series remainder</h2>
+
+
+<p>The absolute error is no greater than the first omitted term. <span class="math display">\[|R_{n}|\le{}a_{n+1}\]</span></p>
+
+
+<h2 class="unnumbered" id="absolute-convergence">3.15 Absolute
+convergence</h2>
+
+
+<p>Absolute convergence implies ordinary convergence. <span class="math display">\[\sum_{n=1}^\infty|a_{n}|&lt;\infty
+\Longrightarrow \sum_{n=1}^\infty a_{n} \text{ converges.}\]</span></p>
+
+
+<h2 class="unnumbered" id="conditional-convergence">3.16 Conditional
+convergence</h2>
+
+
+<p>A series is conditionally convergent if it converges but does not
+converge absolutely. <span class="math display">\[\sum_{n=1}^\infty
+a_{n} \text{ converges and } \sum_{n=1}^\infty |a_{n}|
+diverges\]</span></p>
+
+
+<h2 class="unnumbered" id="rearrangement-theorem">3.17 Rearrangement
+theorem</h2>
+
+
+<p>Absolutely convergent series retain their sum under arbitrary
+rearrangements. <span class="math display">\[\sum_{n=1}^\infty|a_{n}|&lt;\infty
+\Longrightarrow \sum_{n=1}^\infty\pi(n)=\sum_{n=1}^\infty
+a_{n}\]</span></p>
+
+
+<h2 class="unnumbered" id="riemann-rearrangement-theorem">3.18 Riemann
+rearrangement theorem</h2>
+
+
+<p>A conditionally convergent real series can be rearranged to converge
+to any prescribed real number, or diverge to <span class="math inline">\(\pm\)</span><span class="math inline">\(\infty\)</span>. <span class="math display">\[\text{Conditional convergence } \Longrightarrow
+\text{ arbitrary rearranged sums possible.}\]</span></p>
+
+
+<h1 id="limits-of-functions">Limits of Functions</h1>
+
+
+<h2 class="unnumbered" id="function-limit">4.1 Function limit</h2>
+
+
+<p>The <span class="math inline">\(\varepsilon\)</span>–<span class="math inline">\(\delta\)</span> definition describes the behavior
+of f near a, excluding the value at a itself. <span class="math display">\[\lim_{x\to a} f(x)=L \:\: \Longleftrightarrow
+\:\:\:\forall\varepsilon&gt;0 \: \exists\:\delta&gt;0:
+0&lt;|x-a|&lt;\delta \Longrightarrow
+|f(x)-L|&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="uniqueness-of-function-limit">4.2 Uniqueness
+of function limit</h2>
+
+
+<p>A finite limit, if it exists, is unique. <span class="math display">\[\lim_{x\to a} f(x)=L_{1}=L_{2}\]</span></p>
+
+
+<h2 class="unnumbered" id="one-sided-limits">4.3 One-sided limits</h2>
+
+
+<p>A two-sided limit exists exactly when both one-sided limits exist and
+agree. <span class="math display">\[\lim_{x\to a} f=L
+\Longleftrightarrow \lim_{x\to a^{-}}f=\lim_{x\to a^{+}}
+f=L\]</span></p>
+
+
+<h2 class="unnumbered" id="limit-laws-1">4.4 Limit laws</h2>
+
+
+<p>Limits preserve algebraic operations under the usual hypotheses.
+<span class="math display">\[lim(f\pm{}g)=L\pm{}M;\:\: lim(fg)=LM;
+\:\:lim(f/g)=L/M\]</span></p>
+
+
+<h2 class="unnumbered" id="squeeze-theorem-1">4.5 Squeeze theorem</h2>
+
+
+<p>A function trapped between two functions with the same limit has that
+limit. <span class="math display">\[g\le{}f\le{}h \text{ and } g,h\to{}L
+\Longrightarrow f\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="sequential-criterion-for-limits">4.6
+Sequential criterion for limits</h2>
+
+
+<p>A function has limit L at a iff every sequence approaching a through
+the domain has images approaching L. <span class="math display">\[x_{n}\to{}a, x_{n}\ne{}a \Longrightarrow
+f(x_{n})\to{}L\]</span></p>
+
+
+<h2 class="unnumbered" id="infinite-limits">4.7 Infinite limits</h2>
+
+
+<p>The function tends to infinity if it eventually exceeds every bound
+near a. <span class="math display">\[\lim_{x\to a} f(x)=\infty
+\Longleftrightarrow \forall{}M&gt;0\:\: \exists \:\: \delta&gt;0:
+0&lt;|x-a|&lt;\delta \Longrightarrow f(x)&gt;M\]</span></p>
+
+
+<h2 class="unnumbered" id="limits-at-infinity">4.8 Limits at
+infinity</h2>
+
+
+<p>A finite limit at infinity describes eventual closeness as x becomes
+arbitrarily large. <span class="math display">\[\lim_{x\to \infty}
+f(x)=L\]</span></p>
+
+
+<h2 class="unnumbered" id="asymptote-criterion">4.9 Asymptote
+criterion</h2>
+
+
+<p>A horizontal asymptote y=L corresponds to a finite limit at <span class="math inline">\(\pm\)</span><span class="math inline">\(\infty\)</span>. <span class="math display">\[\lim_{x\to \infty} f(x)=L \:\: \Longrightarrow
+\:\:y=\text{L is a horizontal asymptote.}\]</span></p>
+
+
+<h1 id="continuity">Continuity</h1>
+
+
+<h2 class="unnumbered" id="continuity-at-a-point">5.1 Continuity at a
+point</h2>
+
+
+<p>Continuity means the function value agrees with the local limit.
+<span class="math display">\[f \text{ continuous at a
+}\Longleftrightarrow \lim_{x \to a}  f(x)=f(a)\]</span></p>
+
+
+<h2 class="unnumbered" id="sequential-continuity">5.2 Sequential
+continuity</h2>
+
+
+<p>Continuity is equivalent to preservation of convergent sequences.
+<span class="math display">\[x_{n}\to{}a \Longrightarrow
+f(x_{n})\to{}f(a)\]</span></p>
+
+
+<h2 class="unnumbered" id="algebra-of-continuous-functions">5.3 Algebra
+of continuous functions</h2>
+
+
+<p>Sums, products, quotients where defined, and compositions of
+continuous functions are continuous.</p>
+
+
+<h2 class="unnumbered" id="intermediate-value-theorem">5.4 Intermediate
+Value Theorem</h2>
+
+
+<p>A continuous function on an interval assumes every value between any
+two of its values. <span class="math display">\[f\in{}C[a,b], y \text{
+between } f(a),f(b) \Longrightarrow \exists{} \:\:c: f(c)=y\]</span></p>
+
+
+<h2 class="unnumbered" id="bolzano-theorem">5.5 Bolzano theorem</h2>
+
+
+<p>A continuous function with opposite signs at endpoints has a zero in
+the interval. <span class="math display">\[f(a)f(b)&lt;0 \Longrightarrow
+\exists{} \:\: c\in(a,b): f(c)=0\]</span></p>
+
+
+<h2 class="unnumbered" id="extreme-value-theorem">5.6 Extreme Value
+Theorem</h2>
+
+
+<p>A continuous function on a compact interval attains both its maximum
+and minimum. <span class="math display">\[f\in{}C[a,b] \Longrightarrow
+\exists{}\:\:x_{1},x_{2}: f(x_{1})\le{}f(x)\le{}f(x_{2})\]</span></p>
+
+
+<h2 class="unnumbered" id="uniform-continuity">5.7 Uniform
+continuity</h2>
+
+
+<p>One <span class="math inline">\(\delta\)</span> works for all pairs
+of points in the domain. <span class="math display">\[\forall\varepsilon&gt;0 \:\exists\:\delta&gt;0:
+|x-y|&lt;\delta \Longrightarrow |f(x)-f(y)|&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="heine-cantor-theorem">5.8 Heine-Cantor
+theorem</h2>
+
+
+<p>Continuity on a compact interval implies uniform continuity. <span class="math display">\[f\in{}C([a,b]) \Longrightarrow f \text{ is
+uniformly continuous.}\]</span></p>
+
+
+<h2 class="unnumbered" id="lipschitz-condition">5.9 Lipschitz
+condition</h2>
+
+
+<p>A global linear bound on changes implies uniform continuity. <span class="math display">\[|f(x)-f(y)|\le{}M|x-y| \Longrightarrow f \text{
+is uniformly continuous.}\]</span></p>
+
+
+<h2 class="unnumbered" id="uniform-continuity-preserves-cauchy-sequences">5.10 Uniform
+continuity preserves Cauchy sequences</h2>
+
+
+<p>A uniformly continuous function maps Cauchy sequences to Cauchy
+sequences. <span class="math display">\[(x_{n}) \text{ Cauchy }
+\Longrightarrow (f(x_{n})) \text{ Cauchy }\]</span></p>
+
+
+<h2 class="unnumbered" id="types-of-discontinuity">5.11 Types of
+discontinuity</h2>
+
+
+<p>Removable, jump and infinite discontinuities describe standard ways
+continuity can fail.</p>
+
+
+<h1 id="differentiability">Differentiability</h1>
+
+
+<h2 class="unnumbered" id="derivative">6.1 Derivative</h2>
+
+
+<p>The derivative is the limit of the difference quotient. <span class="math display">\[f'(a)=\lim_{h \to 0}
+\frac{f(a+h)-f(a)}{h}\]</span></p>
+
+
+<h2 class="unnumbered" id="differentiability-implies-continuity">6.2
+Differentiability implies continuity</h2>
+
+
+<p>Differentiability at a point implies continuity there. <span class="math display">\[f'(a) \text{ exists } \Longrightarrow f
+\text{ is continuous at a.}\]</span></p>
+
+
+<h2 class="unnumbered" id="geometric-meaning">6.3 Geometric meaning</h2>
+
+
+<p>The derivative is the slope of the tangent line to the graph. <span class="math display">\[slope=f'(a)\]</span></p>
+
+
+<h2 class="unnumbered" id="derivative-as-linear-approximation">6.4
+Derivative as linear approximation</h2>
+
+
+<p>For small h, the change in f is approximately f’(a)h. <span class="math display">\[f(a+h)\approx{}f(a)+f'(a)h\]</span></p>
+
+
+<h2 class="unnumbered" id="derivative-rules">6.5 Derivative rules</h2>
+
+
+<p>Constants, sums, products, quotients and compositions obey standard
+differentiation rules. <span class="math display">\[(fg)'=f'g+fg'\]</span></p>
+
+
+<h2 class="unnumbered" id="chain-rule">6.6 Chain rule</h2>
+
+
+<p>The derivative of a composition is the product of the outer and inner
+derivatives. <span class="math display">\[(f\circ
+g)'(x)=f'(g(x))g'(x)\]</span></p>
+
+
+<h2 class="unnumbered" id="power-rule">6.7 Power rule</h2>
+
+
+<p>Derivative of <span class="math inline">\(x^n\)</span>. <span class="math display">\[\frac{d}{dx}\left(x^{n}\right) = n
+x^{n-1}\]</span></p>
+
+
+<h2 class="unnumbered" id="exponential-rule">6.8 Exponential rule</h2>
+
+
+<p>Derivative of <span class="math inline">\(e^x\)</span>. <span class="math display">\[(e^x)'=e^x\]</span></p>
+
+
+<h2 class="unnumbered" id="logarithm-rule">6.9 Logarithm rule</h2>
+
+
+<p>Derivative of ln x. <span class="math display">\[(ln \:
+x)'=1/x\]</span></p>
+
+
+<h2 class="unnumbered" id="basic-trigonometric-derivatives">6.10 Basic
+trigonometric derivatives</h2>
+
+
+<p>Standard trigonometric derivatives. <span class="math display">\[(sin
+x)'=cos x; \:\: (cos x)'=-sin x; \:\:(tan
+x)'=sec^{2}x\]</span></p>
+
+
+<h2 class="unnumbered" id="inverse-function-derivative">6.11
+Inverse-function derivative</h2>
+
+
+<p>For a differentiable inverse with nonzero derivative, the inverse
+derivative is reciprocal. <span class="math display">\[\left(f^{-1}\right)'(y) =
+\frac{1}{f'\left(f^{-1}(y)\right)}\]</span></p>
+
+
+<h2 class="unnumbered" id="rolles-theorem">6.12 Rolle’s theorem</h2>
+
+
+<p>Equal endpoint values force a stationary point inside. <span class="math display">\[f(a)=f(b) \Longrightarrow \exists{}\:\:c\in(a,b):
+f'(c)=0\]</span></p>
+
+
+<h2 class="unnumbered" id="lagrange-mean-value-theorem">6.13 Lagrange
+Mean Value Theorem</h2>
+
+
+<p>Some tangent slope equals the average slope across the interval.
+<span class="math display">\[\exists{}\:\:c\in(a,b):
+f'(c)=\frac{f(b)-f(a)}{b-a}\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchys-mean-value-theorem">6.14 Cauchy’s
+Mean Value Theorem</h2>
+
+
+<p>A generalized mean-value relation involving two functions. <span class="math display">\[\frac{f'(c)}{g'(c)}=\frac{f(b)-f(a)}{g(b)-g(a)}\]</span></p>
+
+
+<h2 class="unnumbered" id="fermats-theorem">6.15 Fermat’s theorem</h2>
+
+
+<p>An interior differentiable local extremum has zero derivative. <span class="math display">\[\text{Local extremum at c } \Longrightarrow
+f'(c)=0\]</span></p>
+
+
+<h2 class="unnumbered" id="darboux-theorem">6.16 Darboux theorem</h2>
+
+
+<p>Derivatives have the intermediate value property even though they
+need not be continuous. <span class="math display">\[f' \text{ has
+IVP}\]</span></p>
+
+
+<h2 class="unnumbered" id="derivative-bounded-longrightarrow-lipschitz">6.17 Derivative bounded
+<span class="math inline">\(\Longrightarrow\)</span> Lipschitz</h2>
+
+
+<p>If |f’|<span class="math inline">\(\le\)</span>M on an interval, f is
+Lipschitz there. <span class="math display">\[|f'(x)|\le{}M
+\Longrightarrow |f(x)-f(y)|\le{}M|x-y|\]</span></p>
+
+
+<h1 id="applications-of-single-variable-derivatives">Applications of
+Single-Variable Derivatives</h1>
+
+
+<h2 class="unnumbered" id="critical-point">7.1 Critical point</h2>
+
+
+<p>A critical point is an interior point where f’=0 or f’ does not
+exist. <span class="math display">\[f'(c)=0 \text{ or } f'(c)
+\text{ DNE }\]</span></p>
+
+
+<h2 class="unnumbered" id="local-maximum">7.2 Local maximum</h2>
+
+
+<p>f(c) is at least as large as nearby function values. <span class="math display">\[f(c)\ge{}f(x) \text{ near } c\]</span></p>
+
+
+<h2 class="unnumbered" id="local-minimum">7.3 Local minimum</h2>
+
+
+<p>f(c) is at most as large as nearby function values. <span class="math display">\[f(c)\le{}f(x) \text{ near } c\]</span></p>
+
+
+<h2 class="unnumbered" id="first-derivative-test">7.4 First derivative
+test</h2>
+
+
+<p>A change from positive to negative gives a local maximum; negative to
+positive gives a local minimum. <span class="math display">\[+\to- :
+max; \:\:\: -\to+ : min\]</span></p>
+
+
+<h2 class="unnumbered" id="monotonicity-theorem">7.5 Monotonicity
+theorem</h2>
+
+
+<p>If f’<span class="math inline">\(\ge\)</span>0 throughout an
+interval, f is nondecreasing; if f’<span class="math inline">\(\le\)</span>0, f is nonincreasing. <span class="math display">\[f'\ge0 \Longrightarrow f \text{
+non-decreasing.}\]</span></p>
+
+
+<h2 class="unnumbered" id="strict-monotonicity-theorem">7.6 Strict
+monotonicity theorem</h2>
+
+
+<p>If f’&gt;0 throughout an interval, f is strictly increasing;
+similarly for f’&lt;0. <span class="math display">\[f'&gt;0
+\Longrightarrow f \text{ strictly increasing.}\]</span></p>
+
+
+<h2 class="unnumbered" id="second-derivative-test">7.7 Second derivative
+test</h2>
+
+
+<p>At a stationary point, positive second derivative gives a local
+minimum and negative gives a local maximum. <span class="math display">\[f'(c)=0; \:\:\: f''(c)&gt;0
+\Longrightarrow min; \:\:\: f''(c)&lt;0 \Longrightarrow
+max\]</span></p>
+
+
+<h2 class="unnumbered" id="concavity">7.8 Concavity</h2>
+
+
+<p>Positive second derivative corresponds to concavity upward; negative
+to downward. <span class="math display">\[f''&gt;0
+\Longrightarrow \text{ convex/upward;} \:\: f''&lt;0
+\Longrightarrow \text{ concave/downward.}\]</span></p>
+
+
+<h2 class="unnumbered" id="inflection-point">7.9 Inflection point</h2>
+
+
+<p>A point where the concavity changes is an inflection point, subject
+to the standard local definition. <span class="math display">\[\text{
+Concavity changes at c }\Longrightarrow \text{ Inflection
+point.}\]</span></p>
+
+
+<h2 class="unnumbered" id="generalized-second-derivative-test">7.10
+Generalized second derivative test</h2>
+
+
+<p>If the first nonzero derivative after f’ at c is of even order, its
+sign determines max/min; odd order gives no extremum. <span class="math display">\[f'(c)=\cdots=f^{(m-1)}(c)=0,
+f^{(m)}(c)\ne0\]</span></p>
+
+
+<h2 class="unnumbered" id="taylor-theorem">7.11 Taylor theorem</h2>
+
+
+<p>A smooth function can be approximated by a polynomial with a
+controlled remainder. <span class="math display">\[f(x) = \sum_{k=0}^{n}
+\frac{f^{(k)}(a)}{k!} (x-a)^k + R_{n}(x)\]</span></p>
+
+
+<h2 class="unnumbered" id="lagrange-remainder">7.12 Lagrange
+remainder</h2>
+
+
+<p>Taylor’s remainder has a derivative-based representation. <span class="math display">\[R_{n}(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}
+(x-a)^{n+1}\]</span></p>
+
+
+<h2 class="unnumbered" id="maclaurin-expansion">7.13 Maclaurin
+expansion</h2>
+
+
+<p>Taylor expansion about zero. <span class="math display">\[f(x) =
+\sum_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!} x^k\]</span></p>
+
+
+<h2 class="unnumbered" id="lhopitals-rule">7.14 L’Hopital’s rule</h2>
+
+
+<p>Under standard hypotheses, 0/0 or <span class="math inline">\(\infty\)</span>/<span class="math inline">\(\infty\)</span> limits may be evaluated using
+derivative ratios. <span class="math display">\[lim
+\frac{f}{g}=lim\frac{f'}{g'}\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchy-mvt-consequence">7.15 Cauchy MVT
+consequence</h2>
+
+
+<p>If f’=0 on an interval, f is constant there. <span class="math display">\[f'=0 \Longrightarrow f is
+constant\]</span></p>
+
+
+<h2 class="unnumbered" id="mean-value-bound">7.16 Mean-value bound</h2>
+
+
+<p>A bounded derivative controls function differences. <span class="math display">\[|f'|\le{}M \Longrightarrow
+|f(b)-f(a)|\le{}M|b-a|\]</span></p>
+
+
+<h2 class="unnumbered" id="inverse-function-monotonicity">7.17
+Inverse-function monotonicity</h2>
+
+
+<p>A continuous strictly monotone function has an inverse on its range,
+and the inverse is continuous. <span class="math display">\[f \text{
+strictly monotone } \Longrightarrow f^{-1} \text{ exists on }
+f(I).\]</span></p>
+
+
+<h2 class="unnumbered" id="optimization-principle">7.18 Optimization
+principle</h2>
+
+
+<p>A continuous function on a closed bounded interval attains its
+absolute extrema; candidates include endpoints and critical points.
+<span class="math display">\[\text{The set of candidate points for local
+or absolute extrema on } [a, b] \text{ is given by:}\]</span> <span class="math display">\[E = \{a, b\} \cup \{c \in (a, b) : f'(c) =
+0\} \cup \{c \in (a, b) : f'(c) \text{ does not
+exist}\}\]</span></p>
+
+
+<h2 class="unnumbered" id="rolle-based-root-uniqueness">7.19 Rolle-based
+root uniqueness</h2>
+
+
+<p>If f’ never vanishes on an interval, f has at most one zero there.
+<span class="math display">\[f'\ne0 \Longrightarrow \text{ At most
+one root.}\]</span></p>
+
+
+<h1 id="riemann-integration">Riemann Integration</h1>
+
+
+<h2 class="unnumbered" id="partition">8.1 Partition</h2>
+
+
+<p>A partition of [a,b] divides it into finitely many subintervals.
+<span class="math display">\[P={a=x_{0}&lt;x_{1}&lt;\cdots&lt;x_{n}=b}\]</span></p>
+
+
+<h2 class="unnumbered" id="meshnorm-of-partition">8.2 Mesh/norm of
+partition</h2>
+
+
+<p>The mesh is the length of the largest subinterval. <span class="math display">\[||P||=max_i(x_i-x_{i-1})\]</span></p>
+
+
+<h2 class="unnumbered" id="upper-sum">8.3 Upper sum</h2>
+
+
+<p>The upper Darboux sum uses the supremum of f on each subinterval.
+<span class="math display">\[U(f,P)=\sum M_i\Delta x_i\]</span></p>
+
+
+<h2 class="unnumbered" id="lower-sum">8.4 Lower sum</h2>
+
+
+<p>The lower Darboux sum uses the infimum on each subinterval. <span class="math display">\[L(f,P)=\sum m_i\Delta x_i\]</span></p>
+
+
+<h2 class="unnumbered" id="upper-integral">8.5 Upper integral</h2>
+
+
+<p>The upper integral is the infimum of upper sums. <span class="math display">\[\overline{\int_{a}^{b}} f(x) \, dx = \inf_{P}
+U(f, P)\]</span></p>
+
+
+<h2 class="unnumbered" id="lower-integral">8.6 Lower integral</h2>
+
+
+<p>The lower integral is the supremum of lower sums. <span class="math display">\[\underline{\int_{a}^{b}} f(x) \, dx = \sup_{P}
+L(f, P)\]</span></p>
+
+
+<h2 class="unnumbered" id="riemann-integrability-criterion">8.7 Riemann
+integrability criterion</h2>
+
+
+<p>A bounded function is Riemann integrable iff its upper and lower
+integrals agree. <span class="math display">\[f \text{ is Riemann
+integrable on } [a, b] \iff \underline{\int_{a}^{b}} f(x) \, dx =
+\overline{\int_{a}^{b}} f(x) \, dx\]</span></p>
+
+
+<h2 class="unnumbered" id="darboux-criterion">8.8 Darboux criterion</h2>
+
+
+<p>A bounded function is integrable iff upper and lower sums can be made
+arbitrarily close. <span class="math display">\[\forall\varepsilon&gt;0,
+\:\: \exists{} \:\: P: U(f,P)-L(f,P)&lt;\varepsilon\]</span></p>
+
+
+<h2 class="unnumbered" id="continuous-functions-are-integrable">8.9
+Continuous functions are integrable</h2>
+
+
+<p>Every continuous function on [a,b] is Riemann integrable. <span class="math display">\[f\in{}C[a,b] \Longrightarrow
+f\in{}R[a,b]\]</span></p>
+
+
+<h2 class="unnumbered" id="monotone-functions-are-integrable">8.10
+Monotone functions are integrable</h2>
+
+
+<p>Every bounded monotone function on a closed interval is Riemann
+integrable. <span class="math display">\[f \text{ monotone on }[a,b]
+\Longrightarrow f\in{}R[a,b]\]</span></p>
+
+
+<h2 class="unnumbered" id="basic-integral-properties">8.11 Basic
+integral properties</h2>
+
+
+<p>Riemann integrals are linear and additive over intervals. <span class="math display">\[\int(\alpha{}f+\beta{}g)=\alpha\int
+f+\beta\int{}g\]</span></p>
+
+
+<h2 class="unnumbered" id="order-property">8.12 Order property</h2>
+
+
+<p>If f<span class="math inline">\(\le\)</span>g, then their integrals
+satisfy the same order. <span class="math display">\[f\le{}g
+\Longrightarrow \int f\le\int{}g\]</span></p>
+
+
+<h2 class="unnumbered" id="absolute-value-inequality">8.13
+Absolute-value inequality</h2>
+
+
+<p>The integral of the absolute value dominates the absolute value of
+the integral. <span class="math display">\[\left| \int f
+\right|\le\int|f|\]</span></p>
+
+
+<h2 class="unnumbered" id="bound-estimate">8.14 Bound estimate</h2>
+
+
+<p>A bounded function has an integral bounded by its supremum times
+interval length. <span class="math display">\[|f|\le{}M \Longrightarrow
+\left|\int_a^bf\right|\le{}M(b-a)\]</span></p>
+
+
+<h2 class="unnumbered" id="additivity-over-intervals">8.15 Additivity
+over intervals</h2>
+
+
+<p>Integrals can be split at an intermediate point. <span class="math display">\[\int_a^bf=\int_a^cf+\int_c^b f\]</span></p>
+
+
+<h2 class="unnumbered" id="fundamental-theorem-of-calculus-i">8.16
+Fundamental Theorem of Calculus I</h2>
+
+
+<p>If f is continuous, its accumulation function has derivative f. <span class="math display">\[F(x)=\int_a^xf(t)dt \Longrightarrow
+F'(x)=f(x)\]</span></p>
+
+
+<h2 class="unnumbered" id="fundamental-theorem-of-calculus-ii">8.17
+Fundamental Theorem of Calculus II</h2>
+
+
+<p>A differentiable antiderivative evaluates a definite integral by
+endpoint values. <span class="math display">\[\int_a^bf(x)dx=F(b)-F(a),
+F'=f\]</span></p>
+
+
+<h2 class="unnumbered" id="integration-by-parts">8.18 Integration by
+parts</h2>
+
+
+<p>The integral of a product can be transformed using derivatives of the
+factors. <span class="math display">\[\int{}u dv=uv-\int{}v
+du\]</span></p>
+
+
+<h2 class="unnumbered" id="substitution-theorem">8.19 Substitution
+theorem</h2>
+
+
+<p>A differentiable change of variable transforms the integral using the
+derivative of the substitution. <span class="math display">\[\int
+f(g(x))g'(x)dx=\int f(u)du\]</span></p>
+
+
+<h2 class="unnumbered" id="mean-value-theorem-for-integrals">8.20 Mean
+Value Theorem for integrals</h2>
+
+
+<p>A continuous function assumes its average value somewhere in the
+interval. <span class="math display">\[\exists{}\:c\in[a,b]:
+\int_a^bf=f(c)(b-a)\]</span></p>
+
+
+<h2 class="unnumbered" id="integral-average-value">8.21 Integral average
+value</h2>
+
+
+<p>The average value of f over [a,b] is the integral divided by interval
+length. <span class="math display">\[f_{\text{avg}} = \frac{1}{b - a}
+\int_{a}^{b} f(x) \, dx\]</span></p>
+
+
+<h2 class="unnumbered" id="improper-integral">8.22 Improper
+integral</h2>
+
+
+<p>An integral with an infinite interval or unbounded integrand is
+defined through a limit. <span class="math display">\[\int_a^\infty
+f=\lim_{b\to^\infty}\int_a^bf\]</span></p>
+
+
+<h2 class="unnumbered" id="p-integral-at-infinity">8.23 p-integral at
+infinity</h2>
+
+
+<p>The integral <span class="math inline">\(\int_{1}^{\infty}x^{-p}\,\,\mathrm{d}x\)</span>
+converges exactly for p&gt;1. <span class="math display">\[\int_{1}^{\infty} \frac{1}{x^{p}} \, dx \text{
+converges} \iff p &gt; 1\]</span></p>
+
+
+<h2 class="unnumbered" id="comparison-test-for-improper-integrals">8.24
+Comparison test for improper integrals</h2>
+
+
+<p>Nonnegative functions can be compared to establish convergence or
+divergence. <span class="math display">\[0\le{}f\le{}g,
+\:\:\:\int{}g&lt;\infty \Longrightarrow \int f&lt;\infty\]</span></p>
+
+
+<h1 id="standard-limits-series-and-formulas">Standard Limits, Series and
+Formulas</h1>
+
+
+<h2 class="unnumbered" id="exponential-series">9.1 Exponential
+series</h2>
+
+
+<p>Maclaurin expansion of <span class="math inline">\(e^x\)</span>.
+<span class="math display">\[e^{x} = \sum_{n=0}^{\infty}
+\frac{x^{n}}{n!}\]</span></p>
+
+
+<h2 class="unnumbered" id="sine-series">9.2 Sine series</h2>
+
+
+<p>Maclaurin expansion of sin x. <span class="math display">\[\sin x =
+\sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n+1}}{(2n+1)!}\]</span></p>
+
+
+<h2 class="unnumbered" id="cosine-series">9.3 Cosine series</h2>
+
+
+<p>Maclaurin expansion of cos x. <span class="math display">\[\cos x =
+\sum_{n=0}^{\infty} \frac{(-1)^{n} x^{2n}}{(2n)!}\]</span></p>
+
+
+<h2 class="unnumbered" id="logarithm-series">9.4 Logarithm series</h2>
+
+
+<p>For |x|&lt;1. <span class="math display">\[\ln(1+x) =
+\sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^{n}}{n}\]</span></p>
+
+
+<h2 class="unnumbered" id="binomial-series">9.5 Binomial series</h2>
+
+
+<p>For suitable <span class="math inline">\(\alpha\)</span> <span class="math display">\[(1+x)^{\alpha} = \sum_{n=0}^{\infty}
+\binom{\alpha}{n} x^{n}, \quad \text{for } |x| &lt; 1\]</span></p>
+
+
+<h2 class="unnumbered" id="standard-sine-limit">9.6 Standard sine
+limit</h2>
+
+
+<p>A fundamental limit used in trigonometric differentiation. <span class="math display">\[\lim_{x \to 0} \frac{\sin x}{x} = 1\]</span></p>
+
+
+<h2 class="unnumbered" id="standard-cosine-limit">9.7 Standard cosine
+limit</h2>
+
+
+<p>A fundamental second-order trigonometric limit. <span class="math display">\[\lim_{x \to 0} \frac{1 - \cos x}{x^{2}} =
+\frac{1}{2}\]</span></p>
+
+
+<h2 class="unnumbered" id="exponential-limit">9.8 Exponential limit</h2>
+
+
+<p>A standard definition-compatible exponential limit. <span class="math display">\[\lim_{x \to 0} \frac{e^{x} - 1}{x} =
+1\]</span></p>
+
+
+<h2 class="unnumbered" id="logarithmic-limit">9.9 Logarithmic limit</h2>
+
+
+<p>A standard logarithmic limit. <span class="math display">\[\lim_{x
+\to 0} \frac{\ln(1 + x)}{x} = 1\]</span></p>
+
+
+<h2 class="unnumbered" id="euler-exponential-limit">9.10 Euler
+exponential limit</h2>
+
+
+<p>A classical limit defining e. <span class="math display">\[\lim_{n
+\to \infty} \left(1 + \frac{1}{n}\right)^{n} = e\]</span></p>
+
+
+<h2 class="unnumbered" id="power-exponential-limit">9.11
+Power-exponential limit</h2>
+
+
+<p>For suitable real a. <span class="math display">\[\lim_{x \to \infty}
+\left(1 + \frac{a}{x}\right)^{x} = e^{a}\]</span></p>
+
+
+<h1 id="important-inequalities-and-consequences">Important Inequalities
+and Consequences</h1>
+
+
+<h2 class="unnumbered" id="am-gm-inequality">10.1 AM-GM inequality</h2>
+
+
+<p>For nonnegative a,b, arithmetic mean dominates geometric mean. <span class="math display">\[\frac{a + b}{2} \ge \sqrt{ab}\]</span></p>
+
+
+<h2 class="unnumbered" id="cauchy-schwarz-inequality">10.2
+Cauchy-Schwarz inequality</h2>
+
+
+<p>The square of an inner product is at most the product of squared
+norms. <span class="math display">\[\left( \sum_{i} a_i b_i \right)^{2}
+\le \left( \sum_{i} a_i^2 \right) \left( \sum_{i} b_i^2
+\right)\]</span></p>
+
+
+<h2 class="unnumbered" id="youngs-inequality">10.3 Young’s
+inequality</h2>
+
+
+<p>For conjugate exponents p,q&gt;1. <span class="math display">\[a b
+\le \frac{a^{p}}{p} + \frac{b^{q}}{q}, \quad \text{where } \frac{1}{p} +
+\frac{1}{q} = 1 \text{ and } p, q &gt; 1\]</span></p>
+
+
+<h2 class="unnumbered" id="bernoulli-inequality">10.4 Bernoulli
+inequality</h2>
+
+
+<p>For n<span class="math inline">\(\in\)</span><span class="math inline">\(\mathbb{N}\)</span> and x<span class="math inline">\(\ge\)</span><span class="math inline">\(-\)</span>1. <span class="math display">\[(1+x)^{n}\ge1+nx\]</span></p>
+
+
+<h2 class="unnumbered" id="jensens-inequality">10.5 Jensen’s
+inequality</h2>
+
+
+<p>A convex function of a weighted average does not exceed the weighted
+average of function values. <span class="math display">\[f\left(
+\sum_{i=1}^{n} \lambda_i x_i \right) \le \sum_{i=1}^{n} \lambda_i
+f(x_i)\]</span></p>
+
+
+<h2 class="unnumbered" id="convexity-criterion">10.6 Convexity
+criterion</h2>
+
+
+<p>A twice differentiable function is convex when its second derivative
+is non-negative. <span class="math display">\[f''\ge0
+\Longrightarrow f \text{ convex.}\]</span></p>
+
+
+<h2 class="unnumbered" id="concavity-criterion">10.7 Concavity
+criterion</h2>
+
+
+<p>A twice differentiable function is concave when its second derivative
+is non-positive. <span class="math display">\[f''\le0
+\Longrightarrow f \text{ concave.}\]</span></p>
+
+
+<h2 class="unnumbered" id="youngholder-family">10.8 Young/Holder
+family</h2>
+
+
+<p>The classical inequalities relate products and sums under conjugate
+exponents and lead to Holder-type bounds.</p>
+
+
+<h2 class="unnumbered" id="integral-cauchy-schwarz">10.9 Integral
+Cauchy-Schwarz</h2>
+
+
+<p>For square-integrable functions, the integral inner product satisfies
+Cauchy-Schwarz. <span class="math display">\[\left|\int
+fg\right|\le\left(\int f^2\right)^{1/2}\left(\int
+g^2\right)^{1/2}\]</span> In detail, <span class="math display">\[\left|
+\int_{a}^{b} f(x)g(x) \, dx \right| \le \left( \int_{a}^{b} f(x)^2 \, dx
+\right)^{1/2} \left( \int_{a}^{b} g(x)^2 \, dx
+\right)^{1/2}\]</span></p>
+  </section>
+
+<!-- Article End -->
+
+<!-- Article Template Part 2 - Start -->
+  <footer>
+    &copy; 2025 mathconic.com. All rights reserved.
+  </footer>
+
+  <script src="./../assets/js/navbar.js"></script>
+</body>
+</html>
+<!-- Article Template Part 2 - End -->
