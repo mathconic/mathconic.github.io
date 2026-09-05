@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!-- Article Template Part 1 - Start -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathConic | One-to-One Mathematics Coaching for Classes 9–12</title>
+  <meta name="description" content="Personalized one-to-one mathematics mentoring for Classes 9 and 10. Build strong concepts, logical thinking, and confidence in mathematics.">
+  <meta name="author" content="MathConic">
+  <meta name="theme-color" content="#fdfdf4">
+  <link rel="icon" href="./../assets/images/mathconic-favicon.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="./../assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/navbar.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <header id="home">
+    <!--<img src="assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" style="max-width: 768px; margin-bottom: 0px;"/>-->
+    <img src="./../assets/images/mathconic-logo.jpg" alt="Math Coaching Logo" class="logo"/>
+
+    <h1>Math is best learned one mind at a time.</h1>
+    <p>Personalized Mathematics Coaching for Classes 9–12.</p>
+  </header>
+
+  
+  <nav class="navbar">
+    <button class="nav-toggle" aria-label="Open navigation">
+        ☰
+    </button>
+    <ul class="nav-menu">
+      <li><a href="./../index.html#home">Home</a></li>
+      <li><a href="./../index.html#philosophy">Philosophy</a></li>
+      <li><a href="./../index.html#about">About</a></li>
+      <li><a href="./../index.html#articles">Articles</a></li>
+      <li><a href="./../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+<!-- Article Template Part 1 - End -->
+
+<!-- Article Start -->
+  <section>
+    <h2>Pair of Straight Lines: An In-depth Study</h2>
+    <p>This article provides a comprehensive treatment of <b>Pair of Straight Lines</b>, beginning 
+      with the basic idea of pair of straight lines through origin. It covers homogeneous and non-homogeneous pairs, conditions
+      for a pair of real and distinct lines, slopes and angles between the lines, angle bisectors, point of intersection, 
+      equations of pairs with given properties, families of lines, parallel and perpendicular pairs, rotation of axes, and the 
+      deeper algebraic and geometric interpretations behind these results. All important theorems, formulas, and results are derived 
+      and proved in detail. It is designed to provide a strong conceptual foundation while covering the level of depth and sophistication 
+      required for JEE Main and JEE Advanced.
+    </p>
+  </section>
+
+  <section class="article-content" aria-label="Pair of Straight Lines">
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]'], ['$$', '$$']],
+          packages: { '[+]': ['ams'] }
+        },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+
+    <style>
+      .article-content {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 18px 24px 55px;
+        font-family: "Times New Roman", Georgia, serif;
+        font-size: 18px;
+        line-height: 1.65;
+        color: #222;
+      }
+      .article-content h1 {
+        background: #111;
+        color: #fff;
+        padding: 10px 15px;
+        margin: 35px 0 24px;
+        font-size: 1.12em;
+        line-height: 1.25;
+      }
+      .article-content h2 {
+        margin: 25px 0 8px;
+        font-size: 0.95em;
+        color: #f20;
+        /* color: #222; */
+      }
+      .article-content p { margin: 9px 0; }
+      .article-content mjx-container[display="true"] {
+        margin: 1.05em 0 !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .article-content table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .article-content th, .article-content td {
+        padding: 6px 9px;
+        border-bottom: 1px solid #ccc;
+      }
+      @media (max-width: 700px) {
+        .article-content {
+          padding: 24px 16px 40px;
+          font-size: 16px;
+        }
+        .article-content h1 { font-size: 1.3em; }
+        .article-content mjx-container[display="true"] {
+          font-size: 95% !important;
+        }
+      }
+      @media print {
+        .article-content { max-width: none; font-size: 12pt; }
+        .article-content h1 {
+          color: #000;
+          background: none;
+          border-bottom: 2px solid #000;
+        }
+      }
+    </style>
+
+<h1 id="lines-through-origin">Pair of Straight Lines through Origin</h1>
+
+
+<h2 class="unnumbered" id="one.one">1.1 A homogeneous equation of second degree
+  \[
+    ax^2 + 2hxy + by^2 = 0
+  \]
+  represents a pair of straight lines through the origin if
+  \[
+    h^2 \geq ab.
+  \]
+</h2>
+
+<p>
+  <b>Proof:</b> Solve the equation \(ax^2 + 2hxy + by^2 = 0\) as a quadratic in \(x\) to get
+  \[
+    x = \left(\frac{-h \pm \sqrt{h^2-ab}}{a}\right)y,
+    \qquad h^2 \geq ab
+  \]
+  which gives two lines as
+  \[
+    ax + (h+\sqrt{h^2-ab})y = 0,
+    \qquad ax + (h-\sqrt{h^2-ab})y = 0
+  \]
+  Each of these lines pass through the Origin.
+  The lines are real if \(h^2 > ab \), coincident if \(h^2 = ab \) and lines do not exist if \(h^2 < ab \).
+</p>
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="one.two">1.2 The angle between the pair of straight lines
+  \[
+    ax^2 + 2hxy + by^2 = 0
+  \]
+  is given by
+  \[
+    \tan\theta =
+    \frac{2\sqrt{h^2-ab}}{|a+b|}.
+  \]</h2>
+
+<p>
+  Let individual pair of straight lines be
+  \[
+    y-m_1x=0
+  \]
+  and
+  \[
+    y-m_2x=0.
+  \]
+</p>
+
+<p>
+  Then
+  \[
+    (y-m_1x)(y-m_2x)=0
+  \]
+  gives
+  \[
+    m_1m_2x^2-(m_1+m_2)xy+y^2=0.
+  \]
+</p>
+
+<p>
+  Comparing it with
+  \[
+    ax^2+2hxy+by^2=0,
+  \]
+  we get
+  \[
+    \frac{m_1m_2}{a}
+    =
+    \frac{-(m_1+m_2)}{2h}
+    =
+    \frac{1}{b}.
+  \]
+</p>
+
+<p>
+  Therefore,
+  \[
+    m_1m_2=\frac{a}{b},
+    \qquad
+    m_1+m_2=-\frac{2h}{b}.
+  \]
+</p>
+
+<p>
+  So,
+  \[
+    \tan\theta
+    =
+    \left|
+      \frac{m_1-m_2}{1+m_1m_2}
+    \right|
+  \]
+  and
+  \[
+    \tan\theta
+    =
+    \frac{
+      \sqrt{(m_1+m_2)^2-4m_1m_2}
+    }{
+      1+m_1m_2
+    }.
+  \]
+</p>
+
+<p>
+  Substituting
+  \[
+    m_1+m_2=-\frac{2h}{b},
+    \qquad
+    m_1m_2=\frac{a}{b},
+  \]
+  we obtain
+  \[
+    \tan\theta
+    =
+    \frac{
+      \sqrt{
+        \dfrac{4h^2}{b^2}
+        -
+        \dfrac{4a}{b}
+      }
+    }{
+      1+\dfrac{a}{b}
+    }.
+  \]
+</p>
+
+<p>
+  Hence,
+  \[
+    \boxed{
+      \tan\theta
+      =
+      \frac{2\sqrt{h^2-ab}}{a+b}
+    }
+  \]
+</p>
+<p> &#10004; The condition for coincidence of lines is \(h^2 = ab\).</p>
+<p> &#10004; The condition for perpendicularity of lines is \(a + b = 0\).</p>
+<p> &#10004; The acute angle is given by \(\tan\theta=\frac{2\sqrt{h^2-ab}}{|a+b|}\).</p>
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="one.three">1.3 The equation of the bisectors of the angles betweeen pair of straight lines
+  \[
+    ax^2 + 2hxy + by^2 = 0
+  \]
+  is given by 
+  \[
+    \frac{x^2-y^2}{a-b} = \frac{xy}{h}.
+  \]
+</h2>
+
+<p>Let individual pair of straight lines be \(y-m_1x=0\) and \(y-m_2x=0\). Since perpendicular distance from 
+  bisector on any of these two lines are equal, we have </p>
+<p>
+  \[
+  \frac{y-m_1x}{\sqrt{1+m_1^2}}
+  =
+  \pm
+  \frac{y-m_2x}{\sqrt{1+m_2^2}}
+  \]
+</p>
+
+<p>
+  Squaring both sides,
+</p>
+
+<p>
+  \[
+  \frac{(y-m_1x)^2}{1+m_1^2}
+  =
+  \frac{(y-m_2x)^2}{1+m_2^2}
+  \]
+</p>
+
+<p>
+  Therefore,
+</p>
+
+<p>
+  \[
+  \begin{aligned}
+  &(y^2+m_1^2x^2-2m_1xy)(1+m_2^2) \\
+  &\qquad =
+  (y^2+m_2^2x^2-2m_2xy)(1+m_1^2).
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  On simplifying,
+</p>
+
+<p>
+  \[
+  y^2(m_2^2-m_1^2)
+  +(m_1^2-m_2^2)x^2
+  -2xy\left[
+  m_1+m_1m_2^2-m_2-m_2m_1^2
+  \right]=0.
+  \]
+</p>
+
+<p>
+  Hence,
+</p>
+
+<p>
+  \[
+  (m_1^2-m_2^2)(x^2-y^2)
+  -2xy(m_1-m_2)(1-m_1m_2)=0.
+  \]
+</p>
+
+<p>
+  Since
+  \[
+  m_1^2-m_2^2=(m_1+m_2)(m_1-m_2),
+  \]
+  we get
+</p>
+
+<p>
+  \[
+  (m_1+m_2)(x^2-y^2)
+  =
+  2xy(1-m_1m_2).
+  \]
+</p>
+
+<p>
+  Comparing
+  \[
+  ax^2+2hxy+by^2=0,
+  \]
+  with
+  \[
+  (y-m_1x)(y-m_2x)=0,
+  \]
+  we have
+  \[
+  m_1+m_2=-\frac{2h}{b},
+  \qquad
+  m_1m_2=\frac{a}{b}.
+  \]
+</p>
+
+<p>
+  Substituting these values,
+</p>
+
+<p>
+  \[
+  \left(-\frac{2h}{b}\right)(x^2-y^2)
+  =
+  2xy\left(\frac{b-a}{b}\right).
+  \]
+</p>
+
+<p>
+  Therefore,
+</p>
+
+<p>
+  \[
+  \boxed{
+  \frac{x^2-y^2}{a-b}
+  =
+  \frac{xy}{h}
+  }
+  \]
+</p>
+
+<h1 id="pair-of-lines">Pair of Straight Lines through General Equation of Second Degree</h1>
+
+<h2 class="unnumbered" id="two.one">
+  2.1 A general equation of second degree
+  \[
+  ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0.
+  \]
+
+  represents a pair of straight lines if and only if
+  \[
+  abc + 2fgh - af^2 - bg^2 - ch^2 = 0.
+  \]
+
+  or equivalently,
+  \[
+  \begin{vmatrix}
+  a & h & g \\
+  h & b & f \\
+  g & f & c
+  \end{vmatrix}
+  = 0
+  \]</h2>
+
+
+<p> </p>
+
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="two.two">2.2 Homegenization</h2>
+
+
+<p> </p>
+<hr style="border: 0; border-top: 7px solid;">
+
+<h1 id="exercises-pair-of-lines">Exercises</h1>
+
+<ol>
+  <li>
+  If the equation \(ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0 \)
+  represents a pair of straight lines, show that they intersect at the point
+  \[
+      \left(
+        \frac{hf-bg}{ab-h^2},
+        \frac{hg-af}{ab-h^2}
+      \right).
+      \]
+  </li>
+</ol>
+<!-- Article End -->
+
+<!-- Article Template Part 2 - Start -->
+  <footer>
+    &copy; 2025 mathconic.com. All rights reserved.
+  </footer>
+
+  <script src="./../assets/js/navbar.js"></script>
+</body>
+</html>
+<!-- Article Template Part 2 - End -->
