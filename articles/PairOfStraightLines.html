@@ -44,7 +44,7 @@
 <!-- Article Start -->
   <section>
     <h2>Pair of Straight Lines: An In-depth Study</h2>
-    <p>This article provides a comprehensive treatment of <b>Pair of Straight Lines</b>, beginning 
+    <p>This article provides a comprehensive theory of <b>Pair of Straight Lines</b>, beginning 
       with the basic idea of pair of straight lines through origin. It covers homogeneous and non-homogeneous pairs, conditions
       for a pair of real and distinct lines, slopes and angles between the lines, angle bisectors, point of intersection, 
       equations of pairs with given properties, families of lines, parallel and perpendicular pairs, rotation of axes, and the 
@@ -424,18 +424,187 @@
   \]</h2>
 
 
-<p> </p>
+<p> To prove the "if and only if" condition rigorously, we must treat the quadratic as a quadratic in \(x\) (or \(y\) ) and analyze its factorization. </p>
+<p><strong>Necessary condition: </strong></p>
+<p>
+  Rewrite the equation grouping powers of \(x\):
+  \[
+    ax^2+(2hy+2g)x+(by^2+2fy+c)=0
+  \]
+</p>
+
+<p>
+  For this to represent a pair of straight lines, when solved for \(x\),
+  it must give two linear expressions in \(y\).
+  Using the quadratic formula:
+</p>
+
+<p>
+  \[
+    x=
+    \frac{-(2hy+2g)\pm
+    \sqrt{(2hy+2g)^2-4a(by^2+2fy+c)}}{2a}
+  \]
+</p>
+
+<p>
+  Simplify the discriminant \(D_x\) (with respect to \(x\)):
+</p>
+
+<p>
+  \[
+    D_x=(2hy+2g)^2-4a(by^2+2fy+c)
+  \]
+</p>
+
+<p>
+  \[
+    D_x=4(h^2y^2+2hgy+g^2)-4a(by^2+2fy+c)
+  \]
+</p>
+
+<p>
+  \[
+    D_x=4\left[
+    (h^2-ab)y^2+2(hg-af)y+(g^2-ac)
+    \right]
+  \]
+</p>
+
+<p>
+  For the original equation to represent two straight lines, the value of \(x\) must be
+  <strong>linear in \(y\)</strong>. This means the square root \(\sqrt{D_x} \)
+  must be a perfect square of a linear expression in \(y\).
+</p>
+<p>
+  A quadratic in \(y\) is a perfect square if and only if its discriminant is zero. Let its discriminant be \(\Delta_y\):
+
+  \[
+    \Delta_y
+    =
+    \left[2(hg-af)\right]^2
+    -
+    4(h^2-ab)(g^2-ac)
+    =0
+  \]
+
+Expanding this yields 
+  \[
+  \boxed{
+  abc + 2fgh - af^2 - bg^2 - ch^2 = 0
+  }
+  \]
+</p>
+<p><strong>Sufficient condition: </strong></p>
+<p>
+  Assuming the determinant is zero,
+</p>
+
+<p>
+  \[
+   
+      abc+2fgh-af^2-bg^2-ch^2=0
+    \]
+</p>
+
+<p>
+  We know this is equivalent to \( \Delta_y=0 \). If \(\Delta_y=0\), the quadratic in \(y\) inside the square root is a perfect square.
+</p>
+
+<p>
+  Therefore,
+  \[
+    \sqrt{D_x}=2(\alpha y+\beta),
+  \]
+  which is linear in \(y\).
+</p>
+
+<p>
+  Substitute back into the quadratic formula:
+</p>
+
+<p>
+  \[
+    x=
+    \frac{-2hy-2g\pm2(\alpha y+\beta)}{2a}
+  \]
+</p>
+
+<p>
+  \[
+    x=
+    \frac{(-h+\alpha)y+(-g+\beta)}{a}
+  \]
+</p>
+
+<p>
+  This gives two distinct equations of the form:
+</p>
+
+<p>
+  \[
+    x=m_1y+c_1
+    \qquad\text{and}\qquad
+    x=m_2y+c_2
+  \]
+</p>
+
+<p>
+  which are clearly two straight lines.
+</p>
 
 <hr style="border: 0; border-top: 7px solid;">
 
-<h2 class="unnumbered" id="two.two">2.2 Homegenization</h2>
+<h2 class="unnumbered" id="two.two">2.2 To find the equation of the pair of straight lines passing through the origin and 
+  the two points of intersection of the curve \(ax^2+2hxy+by^2+2gx+2fy+c=0\) and the line \(lx + my + n = 0\) </h2>
+<p>
+  Suppose the curve is
+  \[
+  S\equiv ax^2+2hxy+by^2+2gx+2fy+c=0
+  \]
+  and the line is
+  \[
+  L\equiv lx+my+n=0.
+  \]
+</p>
 
 
-<p> </p>
+<p>
+  Step 1: Make the equation of the line in the form: \(\frac{lx+my}{-n}=1 \) (i.e., Linear term = 1).
+</p>
+
+<p>
+  Step 2: Multiply the linear terms \(2gx\) and \(2fy\) of the curve by \(1\)
+  (i.e., \(\frac{lx+my}{-n}\)).
+</p>
+
+<p>
+  Step 3: Multiply the constant term \(c\) by \(1^2\)
+  (i.e., \(\left(\frac{lx+my}{-n}\right)^2\)).
+</p>
+<p>
+  The equation of the pair of straight lines passing through the origin
+  and the two points of intersection of the curve and the line is
+  \[
+  \boxed{
+  ax^2+2hxy+by^2
+  +(2gx+2fy)\left(\frac{lx+my}{-n}\right)
+  +c\left(\frac{lx+my}{-n}\right)^2=0
+  }
+  \]
+</p>
+<p>This process is known as <strong>homogenization</strong>.</p>
+
+
 <hr style="border: 0; border-top: 7px solid;">
 
 <h1 id="exercises-pair-of-lines">Exercises</h1>
 
+<style>
+  ol li {
+    margin-bottom: 32px;
+  }
+</style>
 <ol>
   <li>
   If the equation \(ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0 \)
@@ -446,6 +615,18 @@
         \frac{hg-af}{ab-h^2}
       \right).
       \]
+  </li>
+  <li>
+    Show that the pair of straight lines through origin, and perpendicular to the lines \(ax^2 + 2hxy + by^2 = 0\)
+    are given by \(bx^2 - 2hxy + ay^2 = 0\).
+  </li>
+  <li>
+    Show that the four lines given by \(2x^2 + 3xy - 2y^2 = 0\) and \(2x^2 + 3xy - 2y^2 - 17x + 6y + 8 = 0\) form a rectangle. Also,
+    <p>(a) Find the area of the rectangle.</p>
+    <p>(b) Find the joint equation of the diagonals.</p>
+    <p>(c) Find the point of intersection of the diagonals.</p>
+    <p>(d) Find the angle between the diagonals.</p>
+    <p>(e) Find the equation of the circle circumscribing this rectangle.</p>
   </li>
 </ol>
 <!-- Article End -->
