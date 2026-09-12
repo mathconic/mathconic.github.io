@@ -191,8 +191,59 @@
 </h2>
 
 <p>
-  <strong>Proof:</strong>
+  <strong>Proof:</strong>  Let \(P(x_1,y_1)\), \(Q(x_2,y_2)\), and \(R(x,y)\) divide \(PQ\)
+  internally in the ratio \(m:n\).
 </p>
+<p>
+  Draw perpendiculars from \(P\), \(R\), and \(Q\)
+  to the \(x\)-axis, meeting it at \(P'\), \(R'\), and \(Q'\).
+<br>
+The \(x\)-coordinates of these feet are  \(x_1,x,x_2\).
+</p>
+<p> By similar triangles,
+  \[
+    \frac{P'R'}{R'Q'}
+    =
+    \frac{PR}{RQ}
+    =
+    \frac{m}{n}.
+  \]
+</p>
+
+<p>Since  \(P'R'=x-x_1\) and \(R'Q'=x_2-x\),
+  \[
+    \frac{x-x_1}{x_2-x}
+    =
+    \frac{m}{n}
+  \]
+  \[
+    n(x-x_1)=m(x_2-x)
+  \]
+  \[
+    nx-nx_1=mx_2-mx
+  \]
+  \[
+    nx+mx=mx_2+nx_1
+  \]
+  \[
+    x(m+n)=mx_2+nx_1
+  \]
+  \[
+    \boxed{
+      x=\frac{mx_2+nx_1}{m+n}
+    }
+  \]
+</p>
+<p>
+  Similarly, drawing perpendiculars to the
+  \(y\)-axis gives:
+  \[
+    \boxed{
+      y=\frac{my_2+ny_1}{m+n}
+    }
+  \]
+</p>
+
 <hr style="border: 0; border-top: 7px solid;">
 
 <h2 class="unnumbered" id="two.two">2.2 <strong>External division</strong>: Let \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) be two points. Let \(R(x,y)\)
@@ -207,9 +258,50 @@
 </h2>
 <p>
   <strong>Proof:</strong>
+  On similar lines as above proof, but \(R\) lies outside \(PQ\). Here \(R'\) lies outside
+  \(P'Q'\), so:
+  \[
+    \frac{x-x_1}{x-x_2}
+    =
+    \frac{m}{n}
+  \]
+  \[
+    n(x-x_1)=m(x-x_2)
+  \]
+  \[
+    nx-nx_1=mx-mx_2
+  \]
+  \[
+    nx-mx=nx_1-mx_2
+  \]
+  \[
+    x(n-m)=nx_1-mx_2
+  \]
+  \[
+    \boxed{
+      x=\frac{mx_2-nx_1}{m-n}
+    }
+  \]
 </p>
 
+<p>
+  Similarly:
+  \[
+    \boxed{
+      y=\frac{my_2-ny_1}{m-n}
+    }
+  \]
+</p>
+
+
 <!--<h1 id="pair-of-lines">Key Triangle Points</h1>-->
+
+<!--<h1 id="Area of Triangle</h1>-->
+
+<!--<h1 id="locus">Locus</h1>-->
+
+
+<!--<h1 id="shifting-of-axes">Shifting of Axes</h1>-->
 
 <h1 id="exercises-pair-of-lines">Exercises</h1>
 
