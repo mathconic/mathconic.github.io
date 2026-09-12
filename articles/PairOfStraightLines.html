@@ -279,6 +279,203 @@
   \]
 </h2>
 
+<p>
+  Let the given pair of straight lines be
+  \[
+    ax^2+2hxy+by^2=0.
+  \]
+</p>
+
+<p>
+  Let \(\theta_1\) and \(\theta_2\) be the angles made by these lines
+  with the \(x\)-axis. The combined equation of the lines is
+</p>
+
+<p>
+  \[
+    (y-\tan\theta_1\,x)(y-\tan\theta_2\,x)=0.
+  \]
+</p>
+
+<p>
+  Expanding,
+  \[
+    y^2-(\tan\theta_1+\tan\theta_2)xy
+    +\tan\theta_1\tan\theta_2\,x^2=0.
+  \]
+</p>
+
+<p>
+  Comparing this with
+  \[
+    ax^2+2hxy+by^2=0,
+  \]
+  we have
+  \[
+    \tan\theta_1\tan\theta_2=\frac{a}{b}, \qquad
+    \tan\theta_1+\tan\theta_2=-\frac{2h}{b}.
+  \]
+</p>
+
+<p>
+  Let \(\alpha,\beta\) be the angles made by the two angle bisectors
+  with the \(x\)-axis. We have
+  \[
+    \alpha=\frac{\theta_1+\theta_2}{2},
+    \qquad
+    \beta=90^\circ+\frac{\theta_1+\theta_2}{2}.
+  \]
+</p>
+
+<p>
+  Therefore,
+  \[
+    \tan\alpha
+    =
+    \tan\left(\frac{\theta_1+\theta_2}{2}\right),
+  \]
+  and
+  \[
+    \tan\beta
+    =
+    \tan\left(90^\circ+
+    \frac{\theta_1+\theta_2}{2}\right)
+    =
+    -\cot\left(\frac{\theta_1+\theta_2}{2}\right).
+  \]
+</p>
+
+<p>
+  The combined equation of the angle bisectors is therefore
+  \[
+    (y-\tan\alpha\,x)(y-\tan\beta\,x)=0.
+  \]
+</p>
+
+<p>
+  Substituting the values of \(\tan\alpha\) and \(\tan\beta\),
+  \[
+    \left(
+      y-\tan\frac{\theta_1+\theta_2}{2}\,x
+    \right)
+    \left(
+      y+\cot\frac{\theta_1+\theta_2}{2}\,x
+    \right)=0.
+  \]
+</p>
+
+<p>
+  Expanding,
+  \[
+    y^2-x^2+
+    \left[
+      \cot\frac{\theta_1+\theta_2}{2}
+      -
+      \tan\frac{\theta_1+\theta_2}{2}
+    \right]xy=0.
+  \]
+</p>
+
+<p>
+  Using
+  \[
+    \cot\frac{\theta_1+\theta_2}{2}
+    -
+    \tan\frac{\theta_1+\theta_2}{2}
+    =
+    \frac{
+      1-\tan^2\frac{\theta_1+\theta_2}{2}
+    }{
+      \tan\frac{\theta_1+\theta_2}{2}
+    },
+  \]
+  we get
+  \[
+    y^2-x^2+
+    \left[
+      \frac{
+        1-\tan^2\frac{\theta_1+\theta_2}{2}
+      }{
+        \tan\frac{\theta_1+\theta_2}{2}
+      }
+    \right]xy=0.
+  \]
+</p>
+
+
+  <p>
+  Using the double-angle formula,
+  \[
+    \tan 2\theta
+    =
+    \frac{2\tan\theta}{1-\tan^2\theta} \implies
+  
+      \frac{1-\tan^2\theta}{\tan\theta}
+      =
+      \frac{2}{\tan 2\theta}
+  \]
+</p>
+<p>
+  we have
+  \[
+    y^2-x^2+
+    \frac{2xy}{\tan(\theta_1+\theta_2)}
+    =0.
+  \]
+</p>
+
+<p>
+  Now,
+  \[
+    \tan(\theta_1+\theta_2)
+    =
+    \frac{
+      \tan\theta_1+\tan\theta_2
+    }{
+      1-\tan\theta_1\tan\theta_2
+    }.
+  \]
+</p>
+
+<p>
+  Substituting
+  \[
+    \tan\theta_1+\tan\theta_2=-\frac{2h}{b},
+    \qquad
+    \tan\theta_1\tan\theta_2=\frac{a}{b},
+  \]
+  we obtain
+  \[
+    \tan(\theta_1+\theta_2)
+    =
+    \frac{-2h/b}{1-a/b}
+    =
+    -\frac{2h}{a-b}.
+  \]
+</p>
+
+<p>
+  Hence,
+  \[
+    y^2-x^2+
+    \frac{h}{a-b}xy=0.
+  \]
+</p>
+
+<p>
+  Therefore,
+  \[
+    \boxed{
+      \frac{x^2-y^2}{a-b}
+      =
+      \frac{xy}{h}
+    }
+  \]
+</p>
+
+<hr>
+<p><strong> Alternate Proof:</strong></p>
+
 <p>Let individual pair of straight lines be \(y-m_1x=0\) and \(y-m_2x=0\). Since perpendicular distance from 
   bisector on any of these two lines are equal, we have </p>
 <p>
@@ -551,6 +748,403 @@ Expanding this yields
 
 <p>
   which are clearly two straight lines.
+</p>
+
+<p><strong> Alternate Proof:</strong></p>
+
+ <p>
+  Let the equation 
+  \[
+    ax^2+2hxy+by^2+2gx+2fy+c=0
+  \]
+  represent a pair of straight lines and let \((x_1,y_1)\) be their point
+  of intersection.
+</p>
+
+<p>
+  If the origin is transferred to \((x_1,y_1)\), with the new axes parallel
+  to their original directions, then
+  \[
+    x\rightarrow x+x_1,
+    \qquad
+    y\rightarrow y+y_1.
+  \]
+</p>
+
+<p>
+  Therefore, the new equation is
+  \[
+  \begin{aligned}
+    &a(x+x_1)^2+2h(x+x_1)(y+y_1)
+    +b(y+y_1)^2\\
+    &\qquad+2g(x+x_1)+2f(y+y_1)+c=0.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  With respect ot new axes, this equation must be pair of straight lines through origin, and hence it must be a homogeneous quadratic equation. 
+</p>
+
+<p>
+  On simplification,
+  \[
+  \begin{aligned}
+    &ax^2+2hxy+by^2\\
+    &\quad+2(ax_1+hy_1+g)x
+    +2(hx_1+by_1+f)y\\
+    &\quad+
+    \left(
+      ax_1^2+2hx_1y_1+by_1^2
+      +2gx_1+2fy_1+c
+    \right)=0.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  Since this is a homogeneous quadratic equation, the coefficients of
+  \(x\), \(y\), and the constant term must vanish. Thus,
+  \[
+    ax_1+hy_1+g=0, \qquad ---- (1)
+  \]
+  \[
+    hx_1+by_1+f=0, \qquad ---- (2)
+  \]
+  \[
+    ax_1^2+2hx_1y_1+by_1^2
+    +2gx_1+2fy_1+c=0. \qquad ---- (3)
+  \]
+</p>
+
+<p> Multiplying (1) by \(x_1\), (2) by \(y_1\), adding them and subtracting from (3) gives
+  \[
+  gx_1 + fy_1 + c = 0 \qquad ---- (4)
+  \] </p>
+
+<p>
+  Solving (1) and (2) gives their point of intersection as 
+  \[
+    x_1=\frac{hf-bg}{ab-h^2},
+    \qquad
+    y_1=\frac{hg-af}{ab-h^2}.
+  \]
+</p>
+
+<p>
+  Substituting these values in equation (4) and simplifying gives
+  \[
+  \boxed{
+    abc+2fgh-af^2-bg^2-ch^2=0.
+  }
+  \]
+</p>
+
+<!--
+<p>
+  <strong>Conversely, suppose</strong>
+  \[
+    abc+2fgh-af^2-bg^2-ch^2=0.
+  \]
+</p>
+
+<p>
+  Define
+  \[
+    x_1=\frac{hf-bg}{ab-h^2},
+    \qquad
+    y_1=\frac{hg-af}{ab-h^2}.
+  \]
+</p>
+
+<p>
+  Then
+  \[
+    ax_1+hy_1+g
+    =
+    \frac{a(hf-bg)+h(hg-af)+g(ab-h^2)}
+         {ab-h^2}.
+  \]
+</p>
+
+<p>
+  On simplifying the numerator,
+  \[
+    ahf-abg+h^2g-ahf+abg-gh^2=0.
+  \]
+  Hence,
+  \[
+    \boxed{ax_1+hy_1+g=0}.
+  \]
+</p>
+
+<p>
+  Similarly,
+  \[
+    hx_1+by_1+f
+    =
+    \frac{h(hf-bg)+b(hg-af)+f(ab-h^2)}
+         {ab-h^2}
+    =0.
+  \]
+</p>
+
+<p>
+  Therefore,
+  \[
+    \boxed{hx_1+by_1+f=0}.
+  \]
+</p>
+
+<p>
+  Now translate the origin to \((x_1,y_1)\). The linear terms in the
+  transformed equation vanish, so the equation becomes
+  \[
+    ax^2+2hxy+by^2+C=0,
+  \]
+  where \(C\) is the constant term.
+</p>
+
+<p>
+  The constant term is
+  \[
+  C=
+  ax_1^2+2hx_1y_1+by_1^2
+  +2gx_1+2fy_1+c.
+  \]
+</p>
+
+<p>
+  Using
+  \[
+    ax_1+hy_1+g=0
+  \]
+  and
+  \[
+    hx_1+by_1+f=0,
+  \]
+  we obtain
+  \[
+  ax_1^2+2hx_1y_1+2gx_1
+  =-hx_1y_1-gx_1,
+  \]
+  and
+  \[
+  by_1^2+2fy_1
+  =-hx_1y_1-fy_1.
+  \]
+  Hence,
+  \[
+    C=-(gx_1+fy_1+c).
+  \]
+</p>
+
+<p>
+  Substituting the values of \(x_1\) and \(y_1\), we get
+  \[
+    gx_1+fy_1+c
+    =
+    \frac{
+      g(hf-bg)+f(hg-af)+c(ab-h^2)
+    }{ab-h^2}.
+  \]
+</p>
+
+<p>
+  Therefore,
+  \[
+    gx_1+fy_1+c
+    =
+    \frac{
+      2fgh-bg^2-af^2+abc-ch^2
+    }{ab-h^2}.
+  \]
+</p>
+
+<p>
+  Since
+  \[
+    abc+2fgh-af^2-bg^2-ch^2=0,
+  \]
+  we have
+  \[
+    gx_1+fy_1+c=0.
+  \]
+  Consequently,
+  \[
+    \boxed{C=0}.
+  \]
+</p>
+
+<p>
+  Thus, after translating the origin to \((x_1,y_1)\), the equation becomes
+  \[
+    \boxed{ax^2+2hxy+by^2=0}.
+  \]
+</p>
+
+<p>
+  This is a homogeneous quadratic equation and therefore represents a
+  pair of straight lines passing through the new origin, provided
+  \[
+    h^2\geq ab.
+  \]
+  Translating the origin back to \((x_1,y_1)\), the original equation
+  consequently represents a pair of straight lines intersecting at
+  \((x_1,y_1)\).
+</p>
+
+<p>
+  Hence,
+  \[
+    \boxed{
+      abc+2fgh-af^2-bg^2-ch^2=0
+    }
+  \]
+  is the required condition.
+</p>
+-->
+
+<p><strong> Yet another alternate proof:</strong></p>
+<p>
+  If the equation
+  \[
+    ax^2+2hxy+by^2+2gx+2fy+c=0
+  \]
+  represents a pair of straight lines, then the expression on the left-hand
+  side can be split into two linear factors:
+  \[
+    lx+my+n
+  \]
+  and
+  \[
+    l'x+m'y+n'.
+  \]
+</p>
+
+<p>
+  Thus,
+  \[
+  ax^2+2hxy+by^2+2gx+2fy+c
+  =
+  (lx+my+n)(l'x+m'y+n').
+  \]
+</p>
+
+<p>
+  Comparing coefficients on both sides, we get
+  \[
+    ll'=a,
+    \qquad
+    mm'=b,
+    \qquad
+    nn'=c,
+  \]
+  and
+  \[
+    lm'+ml'=2h,
+  \]
+  \[
+    ln'+l'n=2g,
+  \]
+  \[
+    mn'+m'n=2f.
+  \]
+</p>
+
+<p>
+  Multiplying the last three equations, we get
+  \[
+    (lm'+l'm)(ln'+l'n)(mn'+m'n)=8fgh.
+  \]
+</p>
+
+<p>
+  Expanding,
+  \[
+  \begin{aligned}
+    &\left(
+      l^2m'n' + ll'm'n + ll'mn' + l'^2mn
+    \right)(mn'+m'n)
+    =8fgh.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  On further expansion,
+  \[
+  \begin{aligned}
+    &mm'l^2n'^2 + mm'll'nn' + ll'm^2n'^2 + nn'l'^2m^2\\
+    &\quad
+    nn'l^2m'^2 + ll'm'^2n^2+ ll'mm'nn' + mm'l'^2n^2
+    =8fgh.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  Rearranging,
+  \[
+  \begin{aligned}
+    &ll'\left(mn'^2+m'n^2\right)
+    +mm'\left(l^2n'^2+l'^2n^2\right)\\
+    &\quad
+    +nn'\left(l'^2m^2+l^2m'^2\right)
+    +2ll'mm'nn'
+    =8fgh.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  Now, using
+  \[
+    ll'=a,\qquad mm'=b,\qquad nn'=c,
+  \]
+  we get
+  \[
+    m^2n'^2+m'^2n^2
+    =(mn'+m'n)^2-2mm'nn' = 4f^2-2bc,
+  \]
+  \[
+    l^2n'^2+l'^2n^2
+    =(ln'+l'n)^2-2ll'nn'
+    =4g^2-2ac,
+  \]
+  \[
+    l^2m'^2+l'^2m^2
+    =(lm'+l'm)^2-2ll'mm'
+    =4h^2-2ab.
+  \]
+</p>
+
+<p>
+  Therefore, our expansion becomes
+  \[
+  \begin{aligned}
+    &abc+a(4f^2-2bc)
+    +b(4g^2-2ac)
+    +c(4h^2-2ab)
+    =8fgh.
+  \end{aligned}
+  \]
+</p>
+
+<p>
+  Simplifying,
+  \[
+    4af^2+4bg^2+4ch^2-4abc=8fgh.
+  \]
+</p>
+
+<p>
+  Or
+  \[
+    \boxed{
+      abc+2fgh-af^2-bg^2-ch^2=0
+    }.
+  \]
 </p>
 
 <hr style="border: 0; border-top: 7px solid;">
