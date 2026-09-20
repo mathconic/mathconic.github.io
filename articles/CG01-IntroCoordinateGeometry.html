@@ -161,12 +161,221 @@
   <li>
     The axes divide the plane into four quadrants (I,II,III,IV), numbered counterclockwise, starting from right top side.
   </li>
+
+  <table style="width: 100%; max-width: 700px; border-collapse: collapse; margin: 20px 0;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Property
+      </th>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Description
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        One-to-one correspondence
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Every point \(\leftrightarrow\) exactly one ordered pair \((x,y)\)
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Symmetry about \(x\)-axis
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \((x,y)\rightarrow(x,-y)\)
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Symmetry about \(y\)-axis
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \((x,y)\rightarrow(-x,y)\)
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Symmetry about origin
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \((x,y)\rightarrow(-x,-y)\)
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Symmetry about \(y=x\)
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \((x,y)\rightarrow(y,x)\)
+      </td>
+    </tr>
+  </tbody>
+  </table>
 </ul>
+
+<h1 id="transformation-from-other-systems">Transformation from other Systems</h1>
+<ul>
+  <li>
+    <strong>From Polar to Cartesian:</strong>
+      \[
+    x=r\cos\theta,
+    \qquad
+    y=r\sin\theta
+  \]
+  </li>
+  <li>
+    <strong>From Cartesian to Polar:</strong>
+    \[
+    r=\sqrt{x^2+y^2},
+    \qquad
+    \theta=\tan^{-1}\left(\frac{y}{x}\right)
+  \]
+  </li>
+</ul>
+
+<h1 id="transformation-of-axes">Transformation of Axes</h1>
+<ul>
+  <li>
+    <strong>Transformation of axes </strong> is very useful to simplify the equation of a curve by changing the coordinate system.
+  </li>
+  <li>
+    The key idea is that the geometric point or curve does not change; only the coordinate system used to describe it changes.
+  </li>
+  <li>
+    There are two fundamental transformations: <br>
+    &emsp;&#10003; <strong>Translation of Axes</strong><br>
+    &emsp;&#10003; <strong>Rotation of Axes</strong><br>
+  </li>
+  <li>
+    Translation of axes is a transformation in which the origin is shifted to a new point \((h,k)\), without rotating the axes. 
+    The new axes remain parallel to the original axes,  and the scale and direction remain unchanged.
+    The point \(P\) stays fixed in the plane, but the coordinates of \(P\) change from \((x,y)\) to \((X,Y)\).
+  </li>
+
+  <li>
+    Rotation of axes is a transformation in which the coordinate axes are rotated about the origin by a certain angle \(\theta\), 
+    without changing the origin and without changing the scale.
+    The point \(P\) stays fixed in the plane, the axes rotate, and the coordinates of \(P\) change from \((x,y)\) to \((X,Y)\).
+  </li>
+
+  <li> What each transformation does?
+  <table style="width: 100%; max-width: 700px; border-collapse: collapse; margin: 20px 0;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Transformation
+      </th>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        What changes
+      </th>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Why we do?
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Translation
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Origin
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        To remove linear terms.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Rotation
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Direction of Axes
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        To remove \(xy\) term.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Translation + rotation
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Origin and direction
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Reduce eqn. to simplest form.
+      </td>
+    </tr>
+    
+  </tbody>
+  </table>
+
+  For a general conic \(ax^2+2hxy+by^2+2gx+2fy+c=0\), you can think of the process as
+  \[
+  \boxed { \text{Given eqn.} \rightarrow \text{rotate to remove xy term} \rightarrow \text {translate to remove linear term.}}
+  \]
+  </li>
+</ul>
+
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="one.one">
+  1.1 Consider translation of axes in which the origin is shifted to a new point \((h,k)\), and the coordinates of \(P\) change from \((x,y)\) to \((X,Y)\).
+  Prove the translation formulas:
+  \[
+  \boxed {
+    X = x - h,  \quad Y = y - k
+  } \qquad \text {Or Equivalently,} \qquad
+  \boxed {
+    x = X + h, \quad  y = Y + k
+  } 
+  \]
+</h2>
+
+<p>
+  <b>Proof:</b> Let the original axes be \(OX\) and \(OY\) (x-axis and y-axis). <br>
+  Let the new origin be \(O'(h,k)\).
+  Let the new axes be \(O'X'\) and \(O'Y'\), parallel to the original axes.
+  Let a point \(P\) have 
+  <ul>
+    <li>
+      Old coordinates \((x,y)\) w.r.t. OXY.
+    </li>
+    <li>
+      new coordinates \((X,Y)\) w.r.t. O'X'Y'.
+    </li>
+  </ul>
+  Draw perpendiculars from \(P\) to the original axes, meeting them at \(M\) and \(N\). \( \quad OM=x, ON=y \).<br>
+  Draw perpendiculars from \(O'\) to the original axes, meeting them at \(M'\) and \(N'\). \( \quad OM'=h, ON'=k \).<br>
+  Draw perpendiculars from \(P\) to the new axes, meeting them at \(M''\) and \(N''\). \( \quad O'M''=X, O'N''=Y \).<br>
+  Since the new axes are parallel to the old axes:
+  \[
+  x = OM = OM' + M'M = OM' + O'M'' = h + X. \qquad \boxed{x = X + h}.
+  \]
+  Similarly,
+  \[
+  y = ON = ON' + N'N = ON' + O'N'' = k + Y. \qquad \boxed{y = Y + k}.
+  \]
+</p>
 
 <h1 id="distance-formula">Distance Formula</h1>
 
-<h2 class="unnumbered" id="one.one">
-  1.1 The distance between two points \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) is given by:
+<h2 class="unnumbered" id="two.one">
+  2.1 The distance between two points \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) is given by:
 
   \[
       PQ=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
@@ -177,9 +386,9 @@
   <b>Proof:</b> The proof comes directly from <strong>Pythagoras theorem</strong> applied to the right triangle formed by the horizontal and vertical separations.
 </p>
 
-<h1 id="distance-formula">Section Formula</h1>
+<h1 id="section-formula">Section Formula</h1>
 
-<h2 class="unnumbered" id="two.one">2.1 <strong>Internal division</strong>: Let \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) be two points. Let \(R(x,y)\)
+<h2 class="unnumbered" id="three.one">3.1 <strong>Internal division</strong>: Let \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) be two points. Let \(R(x,y)\)
   divide the line segment \(PQ\) in the ratio \(m:n\). When \(R\) lies between \(P\) and \(Q\) (i.e., \(R\) divides \(PQ\) internally):
    \[
       R(x,y)=
@@ -246,7 +455,7 @@ The \(x\)-coordinates of these feet are  \(x_1,x,x_2\).
 
 <hr style="border: 0; border-top: 7px solid;">
 
-<h2 class="unnumbered" id="two.two">2.2 <strong>External division</strong>: Let \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) be two points. Let \(R(x,y)\)
+<h2 class="unnumbered" id="three.two">3.2 <strong>External division</strong>: Let \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) be two points. Let \(R(x,y)\)
   divide the line segment \(PQ\) in the ratio \(m:n\). When \(R\) lies outside the segment \(PQ\), on the line \(PQ\) extended:
   \[
       R(x,y)=
@@ -292,18 +501,285 @@ The \(x\)-coordinates of these feet are  \(x_1,x,x_2\).
     }
   \]
 </p>
+<hr>
+<ul>
+  <li>
+    The coordinates of the mid-point of the line segment joining \(P(x_1,y_1)\) and \(Q(x_2,y_2)\) is given by \(\left(\frac{x_1 + x_2}{2},\frac{y_1 + y_2}{2}\right)\).
+  </li>
+  <li>
+    Suppose \(A\) and \(B\) are two fixed points, and \(P\) divides \(AB\) internally in the ratio \(m:n\), and \(Q\) divides \(AB\) externally in the ratio \(m:n\),
+    then \(P\) and \(Q\) are called <strong>harmonic conjugates</strong> w.r.t. \(A\) and \(B\). <br>
+    The key property is \(\frac{AP}{PB} = -\frac{AQ}{QB}\), where lengths are directed lengths. From this property, one can derive \(\frac{1}{AP} + \frac{1}{AQ} = \frac{2}{AB}\).
+  </li>
+</ul>
 
 
-<!--<h1 id="pair-of-lines">Key Triangle Points</h1>-->
+<h1 id="key-triangle-points">Key Triangle Points</h1>
 
-<!--<h1 id="Area of Triangle</h1>-->
+ <table style="width: 100%; max-width: 700px; border-collapse: collapse; margin: 20px 0;">
+
+  <thead>
+    <tr>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Point
+      </th>
+      <th style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Coordinates
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        <strong>Centroid \(G\)</strong>
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \[
+          G=
+          \left(
+            \frac{x_1+x_2+x_3}{3},
+            \frac{y_1+y_2+y_3}{3}
+          \right)
+        \]
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        <strong>Incentre \(I\)</strong>
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \[
+          I=
+          \left(
+            \frac{ax_1+bx_2+cx_3}{a+b+c},
+            \frac{ay_1+by_2+cy_3}{a+b+c}
+          \right)
+        \]
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        <strong>Excentre opposite \(A\)</strong>
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        \[
+          I_A=
+          \left(
+            \frac{-ax_1+bx_2+cx_3}{-a+b+c},
+            \frac{-ay_1+by_2+cy_3}{-a+b+c}
+          \right)
+        \]
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        <strong>Circumcentre \(O\)</strong>
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Solve \( OA^2=OB^2=OC^2 \)
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        <strong>Orthocentre \(H\)</strong>
+      </td>
+      <td style="border: 1px solid #888; padding: 10px; text-align: left;">
+        Solve the intersection of the altitudes.
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+<ul>
+  <li>
+    <strong>Euler line</strong>
+    <ul>
+      <li>
+        The Euler line is one of the most beautiful structural results in triangle geometry.
+      </li>
+      <li>
+        For a triangle \(ABC\), the <strong>Euler Line</strong> is the line passing through its Centroid (\(G\)), Circumcentre (\(O\)) and Orthocentre (\(H\)).
+        Thus, O, G, H are collinear.
+      </li>
+      <li>
+        For an equilateral triangle, all three points coincide, so the Euler line is not uniquely defined.
+      </li>
+      <li>
+        The centroid divides the segment joining the circumcentre and orthocentre in the ratio 
+        \[
+        \boxed{
+          OG:GH = 1:2
+        }
+        \quad
+        \text{ or equivalently }
+        \quad
+        \boxed {
+          OG = \frac{1}{2}GH
+        }
+        \]
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+<h1 id="area-of-triangle">Area of Triangle</h1>
+  <h2 class="unnumbered" id="four.one">4.1 
+  If the coordinates of the vertices of a triangle are
+  \(A(x_1,y_1)\), \(B(x_2,y_2)\), and \(C(x_3,y_3)\), then its area is
+  \[
+      \Delta=
+      \frac{1}{2}
+      \left|
+        x_1(y_2-y_3)
+        +x_2(y_3-y_1)
+        +x_3(y_1-y_2)
+      \right|
+    \]
+  Equivalently, the area can be written in determinant form as
+  \[
+      \Delta=
+      \frac{1}{2}
+      \left|
+        \begin{vmatrix}
+          x_1 & y_1 & 1\\
+          x_2 & y_2 & 1\\
+          x_3 & y_3 & 1
+        \end{vmatrix}
+      \right|
+  \]
+
+</h2>
+<p>
+  <strong>Proof:</strong> Draw perpendiculars from \(A\), \(B\), \(C\) to the \(x\)-axis, meeting it at \(A'\), \(B'\), \(C'\).
+  <br>
+  So, we have \(A'=(x_1,0)\), \(B'=(x_2,0)\) and \(C'=(x_3,0)\). 
+  <br>
+  The area of triangle \(ABC\) can be expressed using trapezoids:
+  \[
+    \Delta
+    =
+    \operatorname{Area}(ABB'A')
+    +
+    \operatorname{Area}(BCC'B')
+    -
+    \operatorname{Area}(ACC'A')
+  \]
+  Assuming the vertices are ordered so that \(x_1 < x_2 < x_3\) along the \(x\)-axis; otherwise signed areas handle it automatically.
+  <br>
+  Area of a trapezoid
+  \(=\frac{1}{2}\)(sum of parallel sides)\(\times\)height.
+
+  <br>
+
+  Trapezoid \(ABB'A'\): Parallel sides \(AA'=y_1\), \(BB'=y_2\), height \(=x_2-x_1\):
+  \[
+      \operatorname{Area}(ABB'A')
+      =
+      \frac{1}{2}(y_1+y_2)(x_2-x_1)
+  \]
+  <br>
+  Trapezoid \(BCC'B'\): Parallel sides \(BB'=y_2\), \(CC'=y_3\), height \(=x_3-x_2\):
+  \[
+      \operatorname{Area}(BCC'B')
+      =
+      \frac{1}{2}(y_2+y_3)(x_3-x_2)
+  \]
+  <br>
+  Trapezoid \(ACC'A'\): Parallel sides \(AA'=y_1\), \(CC'=y_3\), height \(=x_3-x_1\):
+  \[
+      \operatorname{Area}(ACC'A')
+      =
+      \frac{1}{2}(y_1+y_3)(x_3-x_1)
+  \]
+  Subtract:
+  \[
+    \Delta
+    =
+    \frac{1}{2}(y_1+y_2)(x_2-x_1)
+    +
+    \frac{1}{2}(y_2+y_3)(x_3-x_2)
+    -
+    \frac{1}{2}(y_1+y_3)(x_3-x_1)
+  \]
+
+  Simplifying gives
+  \[
+\boxed{
+\Delta=\frac{1}{2}
+\left[
+x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)
+\right]
+}
+\]
+</p>
+
+<hr>
+<ul>
+  <li>
+    Alternative forms of area of triangle:
+    <ul>
+      <li>
+        \(\Delta\ = \frac{1}{2}bh \quad\) if base: \(b\) and height: \(h\).
+      </li>
+      <li>
+        \(\Delta\ = \frac{1}{2}ab SinC \quad\) if sides \(a\), \(b\) and included angle \(C\) is given.
+      </li>
+      <li>
+        \(\Delta\ = \sqrt{s(s-a)(s-b)(s-c)}\) where \(s=\frac{a+b+c}{2}\) and \(a\), \(b\), \(c\) are sides. This is well known <strong>Heron's Formula.</strong>
+      </li>
+      <li>
+        \(\Delta\ = \frac{\sqrt{3}}{4}a^2 \) for an equilateral triangle with side \(a\).
+      </li>
+      <li>
+        \(\Delta\ = \frac{abc}{4R} \) for a triangle with circumradius R.
+      </li>
+      <li>
+        \(\Delta\ = rs \) for a triangle with inradius R.
+      </li>
+
+    </ul>
+  </li>
+  <li>
+    Three points \(A\), \(B\) and \(C\) are collinear if and only if the area of the triangle is zero, i.e. \( \Delta = 0\). <br>
+    \( \boxed{\text{Collinear}\iff \Delta=0} \)
+  </li>
+  <li>
+    The area of a quadrilateral having vertices \(A(x_1,y_1)\), \(B(x_2,y_2)\), \(C(x_3,y_3)\), \(D(x_4,y_4)\) in order is given by 
+    \[
+    \text{Area}
+      =
+      \frac{1}{2}
+      \left|
+        (x_1y_2-x_2y_1)
+        +(x_2y_3-x_3y_2)
+        +(x_3y_4-x_4y_3)
+        +(x_4y_1-x_1y_4)
+      \right|
+    \]
+  </li>
+  <li>
+    Area of polygon having vertices \((x_1,y_1)\), \((x_2,y_2)\), ... \((x_n, y_n)\) in order is given by
+    \[
+    \text{Area}=\frac{1}{2}
+    \left|
+    \sum_i \left(x_i y_{i+1}-x_{i+1}y_i\right)
+    \right|
+    \]
+  </li>
+</ul>
 
 <!--<h1 id="locus">Locus</h1>-->
 
-
-<!--<h1 id="shifting-of-axes">Shifting of Axes</h1>-->
-
-<h1 id="exercises-pair-of-lines">Exercises</h1>
+<h1 id="exercises-intro">Exercises</h1>
 
 <style>
   ol li {
@@ -312,27 +788,21 @@ The \(x\)-coordinates of these feet are  \(x_1,x,x_2\).
 </style>
 <ol>
   <li>
-  If the equation \(ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0 \)
-  represents a pair of straight lines, show that they intersect at the point
-  \[
-      \left(
-        \frac{hf-bg}{ab-h^2},
-        \frac{hg-af}{ab-h^2}
-      \right).
-      \]
+  A point has coordinates \( (3,4) \) in the original system.
+  <p> (a) Find the coordinates after rotating the axes by \( 45^\circ\) counterclockwise. </p>
+  <p> (b) In the original coordinate system, find the coordinates of this point \( (3,4) \) after rotating the point itself by \( 45^\circ\). </p>
+  <p> Note that <strong>roating the axes </strong> is not the same as <strong>rotating the point</strong>.</p>
   </li>
+
   <li>
-    Show that the pair of straight lines through origin, and perpendicular to the lines \(ax^2 + 2hxy + by^2 = 0\)
-    are given by \(bx^2 - 2hxy + ay^2 = 0\).
+  Transform the equation \( x^2+ y^2 - 6x -8y +9 = 0 \) by shifting the Origin to \((3,4)\). <br>
+  Note that the translation has removed the linear terms.
   </li>
+  
   <li>
-    Show that the four lines given by \(2x^2 + 3xy - 2y^2 = 0\) and \(2x^2 + 3xy - 2y^2 - 17x + 6y + 8 = 0\) form a rectangle. Also,
-    <p>(a) Find the area of the rectangle.</p>
-    <p>(b) Find the joint equation of the diagonals.</p>
-    <p>(c) Find the point of intersection of the diagonals.</p>
-    <p>(d) Find the angle between the diagonals.</p>
-    <p>(e) Find the equation of the circle circumscribing this rectangle.</p>
+  Transform the equation \( 5x^2+6xy+5y^2=8 \) by rotating the axes to eliminate the \( xy \) term.
   </li>
+  
 </ol>
 <!-- Article End -->
 
