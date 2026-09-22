@@ -43,20 +43,19 @@
 
 <!-- Article Start -->
   <section>
-    
-    <h2>Introduction to Coordinate Geometry</h2>
+      <h2>Introduction to Coordinate Geometry</h2>
 
-    <p> &#10004; Chapter 1 of Coordinate Geometry.</p>
-    <p>&emsp;&#10003; <strong>Chapter 1: Introduction to Coordinate Geometry </strong><br>
-        &emsp;&#10003; Chapter 2: Straight Lines <br>
-        &emsp;&#10003; Chapter 3: Pair of Straight Lines <br>
-        &emsp;&#10003; Chapter 4: Circle <br>
-        &emsp;&#10003; Chapter 5: Parabola <br>
-        &emsp;&#10003; Chapter 6: Ellipse <br>
-        &emsp;&#10003; Chapter 7: Hyperbola </p>
-    <p> &#10004; A comprehensive introduction to Coordinate Geometry.</p>
-    <p> &#10004; All key results derived, many with multiple alternative proofs.</p>
-    <p> &#10004; A strong conceptual foundation for JEE Mains and JEE Advanced.</p>
+      <p> &#10004; Chapter 1 of Coordinate Geometry.</p>
+      <p>&emsp;&#10003; <strong>Chapter 1: Introduction to Coordinate Geometry </strong><br>
+          &emsp;&#10003; Chapter 2: Straight Lines <br>
+          &emsp;&#10003; Chapter 3: Pair of Straight Lines <br>
+          &emsp;&#10003; Chapter 4: Circle <br>
+          &emsp;&#10003; Chapter 5: Parabola <br>
+          &emsp;&#10003; Chapter 6: Ellipse <br>
+          &emsp;&#10003; Chapter 7: Hyperbola </p>
+      <p> &#10004; A comprehensive introduction to Coordinate Geometry.</p>
+      <p> &#10004; All key results derived, many with multiple alternative proofs.</p>
+      <p> &#10004; A strong conceptual foundation for JEE Mains and JEE Advanced.</p>
   </section>
 
   <section class="article-content" aria-label="Pair of Straight Lines">
@@ -110,6 +109,7 @@
         padding: 6px 9px;
         border-bottom: 1px solid #ccc;
       }
+
       @media (max-width: 700px) {
         .article-content {
           padding: 24px 16px 40px;
@@ -329,6 +329,17 @@
   \boxed { \text{Given eqn.} \rightarrow \text{rotate to remove xy term} \rightarrow \text {translate to remove linear term.}}
   \]
   </li>
+  <li>
+    Invariants under translation (quantities that remain unchanged when origin is shifted): <br>
+    &emsp;&#10003;  The coefficients of \(x^2,y^2,xy\): \(\quad a,b,h\)<br>
+    &emsp;&#10003;  Discriminant of quadratic part: \(\quad ab-h^2\)
+  </li>
+  <li>
+    Invariants under rotation (quantities that remain unchanged when axes are rotated) <br>
+    &emsp;&#10003;  The coefficient sum: \(\quad a+b\)<br>
+    &emsp;&#10003;  Discriminant of quadratic part: \(\quad ab-h^2\) <br>
+    &emsp;&#10003;  Distance from origin \((x^2+y^2 = X^2 + Y^2)\)
+  </li>
 </ul>
 
 <hr style="border: 0; border-top: 7px solid;">
@@ -339,8 +350,10 @@
   \[
   \boxed {
     X = x - h,  \quad Y = y - k
-  } \qquad \text {Or Equivalently,} \qquad
-  \boxed {
+  }\]
+  Or Equivalently,
+  \[
+    \boxed {
     x = X + h, \quad  y = Y + k
   } 
   \]
@@ -371,6 +384,156 @@
   y = ON = ON' + N'N = ON' + O'N'' = k + Y. \qquad \boxed{y = Y + k}.
   \]
 </p>
+
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="one.two">
+  1.2 Consider rotation of axes in which the coordinate axes are rotated by an angle \(\theta\) about the origin, 
+  and the coordinates of \(P\) change from \((x,y)\) to \((X,Y)\).
+  Prove the rotation formulas:
+
+  \[
+  \boxed {
+    x = X\cos\theta - Y\sin\theta
+  } \qquad
+  \boxed {
+    y = X\sin\theta + Y\cos\theta
+    }
+  \]
+  
+  and the inverse transformation is,
+  \[
+  \boxed {
+    X = x\cos\theta + y\sin\theta
+  } \qquad
+  \boxed {
+    Y = -x\sin\theta + y\cos\theta
+    }
+  \]
+
+</h2>
+<p>
+  <b>Proof:</b> Let the original axes be \(OX\) and \(OY\) (x-axis and y-axis). <br>
+  Let the new axes be \(OX'\) and \(OY'\), obtained by rotating the original axes counterclockwise by angle \(\theta\).
+  Let a point \(P\) have 
+  <ul>
+    <li>
+      Old coordinates \((x,y)\) w.r.t. OXY.
+    </li>
+    <li>
+      new coordinates \((X,Y)\) w.r.t. OX'Y'.
+    </li>
+  </ul>
+
+  Let \(OP = r\) and let \(OP\) make angle \(\alpha\) with the original \(x\)-axis. In old coordinates,
+  \[
+  x =r\cos\alpha, \qquad y = r\sin\alpha
+  \]
+
+  The new \(x\)-axis \(OX'\) makes angle \(\theta\) with the original \(x\)-axis. <br>
+  So, \(OP\) makes angle \(\alpha - \theta\) with the new \(x\)-axis \(OX'\). <br>
+  In new coordinates,
+  \[
+  X =r\cos(\alpha-\theta), \qquad y = r\sin(\alpha-\theta)
+  \]
+
+  On expanding using compound angle formulas,
+  \[
+  X =r\cos\alpha\cos\theta + r\sin\alpha\sin\theta
+  \]
+  \[
+  Y =r\sin\alpha\cos\theta - r\cos\alpha\sin\theta
+  \]
+
+  But \(r\cos\alpha = x\), and \(r\sin\alpha = y\), so
+
+  \[
+  X = x\cos\theta + y\sin\theta
+  \]
+  \[
+  Y = -x\sin\theta + y\cos\theta
+  \]
+
+  Now, for the inverse, solve for \(x\) and \(y\): <br>
+  Multiply \(X\) by \(\cos\theta\) and \(Y\) by \(-\sin\theta\) to get <br>
+  \(X\cos\theta - Y\sin\theta = x(\cos^2\theta + \sin^2\theta) + y(\sin\theta\cos\theta-\cos\theta\sin\theta) = x\).
+  So,
+  \[
+  x = X\cos\theta - Y\sin\theta
+  \]
+  Similarly,
+  \[
+  y = X\sin\theta + Y\cos\theta
+  \]
+</p>
+<hr>
+<ul>
+  <li>
+    This transformation can also be written as 
+    \[
+    \begin{pmatrix}
+    X\\
+    Y
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+    \cos\theta & \sin\theta\\
+    -\sin\theta & \cos\theta
+    \end{pmatrix}
+    \begin{pmatrix}
+    x\\
+    y
+    \end{pmatrix}
+    \]
+  </li>
+  <li>
+    The rotation matrix, 
+    \(R(\theta) = \begin{bmatrix}  \cos\theta & \sin\theta\\ -\sin\theta & \cos\theta \end{bmatrix} \)
+    is orthogonal, i.e., \(R^{-1} = R^T\). Additionally, det(\(R\)) = 1.
+  </li>
+  <li>
+    The most general transformation of axes consists of translation (to \((h,k)\)), followed by rotation (of angle \(\theta\) counterclockwise).
+    \[
+    x = h + X\cos\theta - Y\sin\theta
+    \]
+    \[
+    y = k + X\sin\theta + Y\cos\theta
+    \]
+  </li>
+</ul>
+
+<hr style="border: 0; border-top: 7px solid;">
+
+<h2 class="unnumbered" id="one.two">
+  1.3 Suppose a given conic equation is \(ax^2+2hxy+by^2+2gx+2fy+c=0\) in original coordinate axes. If coordinate axes are rotated by an angle \(\theta\) such that the 
+  xy term is removed after rotation, then show that \(\tan2\theta = \frac{2h}{a-b}\).
+</h2>
+
+<p>
+  <b>Proof:</b> Substitute \(x = X\cos\theta - Y\sin\theta\) and \(y = X\sin\theta + Y\cos\theta\) into the equation.
+  The coefficient of \(XY\) in the transformed equation shall be
+  \[
+  2(b-a)\sin\theta\cos\theta + 2h(\cos^2\theta - \sin^2\theta)
+  \]
+  Equating it to \(0\) gives
+  \[
+  (b-a)\sin2\theta +2h\cos2\theta = 0
+  \]
+  \[
+  \boxed{\tan2\theta = \frac{2h}{a-b}}
+  \]
+</p>
+<hr>
+
+<ul>
+  <li>
+    <b>Note: </b> If \(a=b\) in the given conic equation, a rotation of \( 45^\circ\) (or \(\pi/4\)) is required to remove the \(xy\) term.
+  </li>
+  <li>
+    <b>Note: </b>There are two values of \(2\theta\) in \([0,2\pi)\) differing by \(\pi\), giving two values of \(\theta\) differing by \(\pi/2\). 
+      Either choice will eliminate the \(xy\) term (they correspond to swapping the new \(x\) and \(y\) axes).
+  </li>
+</ul>
 
 <h1 id="distance-formula">Distance Formula</h1>
 
@@ -791,19 +954,32 @@ x_1(y_2-y_3)+x_2(y_3-y_1)+x_3(y_1-y_2)
   A point has coordinates \( (3,4) \) in the original system.
   <p> (a) Find the coordinates after rotating the axes by \( 45^\circ\) counterclockwise. </p>
   <p> (b) In the original coordinate system, find the coordinates of this point \( (3,4) \) after rotating the point itself by \( 45^\circ\). </p>
-  <p> Note that <strong>roating the axes </strong> is not the same as <strong>rotating the point</strong>.</p>
+  <p> Note that <strong>rotating the axes </strong> is not the same as <strong>rotating the point</strong>.</p>
   </li>
 
   <li>
   Transform the equation \( x^2+ y^2 - 6x -8y +9 = 0 \) by shifting the Origin to \((3,4)\). <br>
   Note that the translation has removed the linear terms.
   </li>
+
+  <li>
+    Transform the equation \(2x^2+ y^2 - 12x + 4y + 14 = 0\) by translating the axes to remove the first-degree terms.
+  </li>
   
   <li>
   Transform the equation \( 5x^2+6xy+5y^2=8 \) by rotating the axes to eliminate the \( xy \) term.
   </li>
+
+  <li>
+  Transform the equation \( x^2+8xy+y^2=16 \) by rotating the axes to eliminate the \( xy \) term.
+  </li>
+
+  <li>
+    Prove that the distance from origin remains unchanged if we rotate the coordinate axes by angle \(\theta\) counterclockwise.
+  </li>
   
 </ol>
+</section>
 <!-- Article End -->
 
 <!-- Article Template Part 2 - Start -->
